@@ -508,7 +508,25 @@ Container adapters do not provide direct iterator access because they are design
         cout<<*(msiter)<<endl;
     }   
     
+      set<int>::iterator siter;
 
+    for(siter = s.begin(); siter != s.end(); siter++){
+        cout<<*(siter)<<endl;
+    }   
+
+    multiset<int>::iterator msiter;
+     for(msiter = ms.begin(); msiter != ms.end(); msiter++){
+        cout<<*(msiter)<<endl;
+    }   
+    for(auto it : s){
+        cout<< it<<endl;
+    }
+
+    for(auto it = s.begin(); it != s.end(); it++){
+        cout<<*(it)<<endl;
+    }
+
+    // auto keyword is used to declare iterator of the type of the stl container without defining the type of the container
 
 ```
 
@@ -564,6 +582,255 @@ Container adapters do not provide direct iterator access because they are design
 
 ```
 
+# Operations on Associative Containers in C++
+
+## 1. `std::set` Operations
+
+### Insertion
+```cpp
+std::set<int> mySet;
+mySet.insert(10);
+mySet.insert(20);
+mySet.insert(15);
+```
+
+### Deletion
+```cpp
+mySet.erase(10); // Removes the element with value 10
+```
+
+### Search
+```cpp
+auto it = mySet.find(15); // Returns an iterator to the element if found, else returns mySet.end()
+```
+
+### Traversal
+```cpp
+for (const auto& elem : mySet) {
+    std::cout << elem << " ";
+}
+```
+
+## 2. `std::map` Operations
+
+### Insertion
+```cpp
+std::map<int, std::string> myMap;
+myMap[1] = "One";
+myMap[2] = "Two";
+myMap.insert({3, "Three"});
+```
+
+### Deletion
+```cpp
+myMap.erase(2); // Removes the key-value pair with key 2
+```
+
+### Search
+```cpp
+auto it = myMap.find(1); // Returns an iterator to the key-value pair if found, else returns myMap.end()
+```
+
+### Traversal
+```cpp
+for (const auto& pair : myMap) {
+    std::cout << pair.first << ": " << pair.second << "\n";
+}
+```
+
+## 3. `std::multiset` Operations
+
+### Insertion
+```cpp
+std::multiset<int> myMultiSet;
+myMultiSet.insert(10);
+myMultiSet.insert(20);
+myMultiSet.insert(10); // Duplicates allowed
+```
+
+### Deletion
+```cpp
+myMultiSet.erase(10); // Removes all occurrences of the element with value 10
+```
+
+### Search
+```cpp
+auto it = myMultiSet.find(20); // Returns an iterator to one occurrence of the element if found
+```
+
+### Traversal
+```cpp
+for (const auto& elem : myMultiSet) {
+    std::cout << elem << " ";
+}
+```
+
+## 4. `std::multimap` Operations
+
+### Insertion
+```cpp
+std::multimap<int, std::string> myMultiMap;
+myMultiMap.insert({1, "One"});
+myMultiMap.insert({2, "Two"});
+myMultiMap.insert({1, "Uno"}); // Duplicates allowed
+```
+
+### Deletion
+```cpp
+myMultiMap.erase(1); // Removes all key-value pairs with key 1
+```
+
+### Search
+```cpp
+auto range = myMultiMap.equal_range(1); // Returns a range of iterators for all key-value pairs with key 1
+for (auto it = range.first; it != range.second; ++it) {
+    std::cout << it->second << " ";
+}
+```
+
+### Traversal
+```cpp
+for (const auto& pair : myMultiMap) {
+    std::cout << pair.first << ": " << pair.second << "\n";
+}
+```
+
+# Algorithms 
+```cpp
+    // algorithms are ways impliment additional functionality like sort , merger and search in continaers
+    // They can be implimneted to any container since they are generic algorithm
+    // all this algorithms are implimented using functions 
+    // they are availalbe in algorithm file
+    // few algorithms are associted and tied with a container and few are generic that can be used to any container.
+    // algorithm in STL only see elements in a container and can move them 
+
+    // TYPES : 
+        // 1) Modifying 
+        // 2) Non Modiyfing 
+        // 3) Numeric 
+        // 4) Heap
+
+    // the algorithms that we are discussion here are generic algorithm and they can be applied to any continer
+
+    // Function objects help us to overload the algorithm with the user define criterion since they can be called in two ways user define criterion and the default type.
+
+    // Predicate are the function object that returns the boolen value. single for one object and two for pair objects. 
+
+```
+### Nonmodifying
+```cpp
+    // they don't modify the content of the container 
+    /*
+        adjacent_find 
+        find_end 
+        max_element
+        binary_search
+        find_first_of
+        min
+        count 
+        find_if 
+        min_element
+        count_if 
+        for_each 
+        mismatch
+        equal 
+        include 
+        ssearch
+        equal_range 
+        lower_bound     binary_searchfind_first_ofmin
+        countfind_ifmin_element
+        count_iffor_eachmismatch
+        equalincludessearch
+        equal_rangelower_boundsearch_n
+        findmaxupper_bound
+        search_n
+        find 
+        max 
+        upper_bound
+
+        these are the list of non-modiying algorithms
+    */
+
+
+```
+
+### Modiyfing algorithm
+```cpp
+    // they modify the content of the container
+    // modifying algorithm that changes the order of the element but not the value is called mutating algorithm
+    /*
+    copy 
+    prev_permutation 
+    rotate_copy
+    copy_backward 
+    random_shuffle 
+    set_difference
+    fill 
+    remove 
+    set_intersection
+    fill_n 
+    remove_copy 
+    set_symmetric_difference
+    generate
+    remove_copy_if
+    set_union
+    generate_n
+    remove_if
+    sort
+    inplace_merge
+    replace
+    stable_partition
+    iter_swap
+    replace_copy
+    stable_sort
+    merge
+    replace_copy_if
+    swap
+    next_permutation
+    replace_if
+    swap_ranges
+    nth_element
+    reverse
+    transform
+    partial_sort
+    reverse_copy
+    unique
+    partial_sort_copy
+    rotate
+    unique_copy
+    partition
+    */
+
+    //
+```
+
+### Numeric algorithm
+```cpp
+    // Numeric algorithms are used to perform numeric operations on the elments of the container
+    /*
+    accumulate
+    inner_product
+    adjacent_difference
+    partial_sum
+    
+
+    above are few algorithms function
+    */
+
+```
+
+### Heap algorithms
+```cpp
+    /*
+    make_heap
+    push_heap
+    pop_heap
+    sort_heap
+
+    these are the few heap algorithm 
+    */
+
+```
 
 
 # Iterators 
@@ -579,6 +846,8 @@ Container adapters do not provide direct iterator access because they are design
         // 4) Forward : combines the functionality of input and output operators
         // 5) Random : works only with vector, array,string and deque
 ```
+
+
 
 # Important 
 * Padding is added in memory for better alignment so that cpu would not have to perfrom extra compuation to access the data.
