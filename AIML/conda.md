@@ -15,4 +15,4 @@
 `install package` | `conda install numpy`
 `build package` | `conda build package`
 
-![idea](AIML/conda1.png)
+![idea](./conda1.png)
