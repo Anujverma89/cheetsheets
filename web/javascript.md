@@ -4,6 +4,19 @@
 * Expression (evaluates values)
 * Statement (Manuplates code) alters the programs 
 * Reserved identifers are keyword in js
+* Javascript 
+    * Core Javscript 
+        * Which can be used in both node and client side
+        * Like data types 
+        * classes 
+        * Objects 
+        * Modules 
+        * Server side 
+        * Regular Expression 
+        * String(Text)
+        * Math
+    * Client-side Javscript
+
 
 ### Basics 
 ```js
@@ -278,8 +291,8 @@ idea:while(i++ <= 15){
 ```js
 // mainly primitive and non-primitive 
 /**Primitive 
- * Numbers 
- * Strings
+ * Numbers (integer & Floating points)
+ * Strings(Text)
  * Boolean
  * null
  * Undefined 
@@ -751,6 +764,9 @@ const c = 18;
 // we cannot assign values to constant variable in js which is declared as const 
 c = 18;
 console.log(c);
+
+
+//ojbects are not nested in they just point to another one 
 ```
 
 ### Functions
@@ -1733,6 +1749,155 @@ console.log(Array.isArray(newarryform));
 
 //you can come back for array method and refer the section here in the book that you have
 ```
+### Modules 
+```js
+    // Modularity can be achieved with the help of class as well
+    // But files are also considered as a module
+    // Modules can be be a file containing class, code , variables and many more.
+
+    // working with modules can be done in different ways : 
+        // common js (module.export require())
+        // require js
+        // AMD : Asynchronous Module Defination 
+        // UMD : Universal Module Defination
+        // Webpack
+        // Babel js 
+        // ES style (impot & export)
+        
+
+    // To work with ES modules 
+    // uses import and export 
+    // user <script type="module" src="filenmae.js"></script>
+    // To use ES script in node we have to declare file as .mjs
+    // export default is ES module 
+    
+    // Export with ES Module 
+    // default export 
+    // named export 
+
+    // Defualt export 
+    export default function another(){
+        console.log("Do something");
+    }
+    import anything from "./filename.js" // here the default export gets assinghed to any variable after import 
+
+    // named export 
+
+    export function this(){
+        console.log("DO this");
+    }
+    import this from "./filename.js" // there the exporting name shoud be same in both the imopritng and exporting values 
+
+
+    
+
+
+    // to work with common js module 
+    // module.exports = {modulename}
+    // require()
+    // Common js is mostly used in Node i.e backend and Es module is used in front end
+    // module is an object which is provided by node itself
+    // module contains many properties and exports is one of them which is dict
+    // we can add different functions, properties in exports.
+    // exports is a alias for module.exports which points to moudle.exports 
+
+    exports = function idea(){
+        console.log("HEY");
+    }
+    // here we are assigining new object to a exports alisa which breaks the linkage between module.exports and exports 
+    // which results in empty dict i.e module.exports = {}
+
+    //instead 
+    exports.name = function(){
+        console.log("Print Name");
+    }
+    //here we add property to a exports or module that exports.
+
+    // OR 
+    module.exports = {name};
+    // here above is overridden so you will only get name in the imported file 
+    // when we require("Filename") it returns the module.exports object which contains all the exported functions and properties and variables 
+
+
+
+```
+### MAP 
+```js
+    // It returns new array instead of modfying the original array
+    arr.map(element => function(element));
+
+```
+
+### filter
+```js
+    // at also returns the new array instead of modfying the original array
+    arr.filter(element=>function(element))
+```
+
+### Automatic syntaxes
+```js
+    // Distructing assignment {}
+    // spread syntax {...objname}
+    // Computed property name 
+    [e.target.name] = e.target.value
+    // spread syntax can be used with both array and objects 
+   
+    
+```
+
+
+### Functions
+```js
+    // functions are callable objects in javascript 
+    // arrow functions ()=> 
+        // types : 1) implicit return i.e without block body ()=> 1+2 (returns 3 implicitly )
+        // 2) Explicit return i.e with block body ()=> 2+1 (retuns nothing unless explicity returned)
+    // shorthand
+    // named
+    // unnamed
+    arr => arr+1; //here arr is a parameter 
+
+```
+
+### Working with javscript in browser ES6 module
+```js
+    // type = "text/javascript" // this is by default when you don't specify type while adding in html file
+        // this is actually working with ES6 module not with common js module
+        // it is executed immediately it is encountered 
+        // we can add defer to tell browser to load it letter
+        <script type="text/javascript" src="./index.js" defer></script>
+        // It doen't supports import and export 
+    
+    // type = "module"
+        // by default is difer i.e exectued after dom is parsed
+        // import and exports are available 
+        // it is in strict mode by default 
+        // browser enforces CORS mode when loaded from cross origin
+
+    // node_modules 
+        // node modules only work with node.js environment not with browser environment
+        // and every node.js modules uses common.js from import and export 
+        // so inorder to work with react or any other library directly in browser we have to use CDN or bundler tool
+
+```
+
+### Bundlers WEBPACK 
+```js
+    // react uses a webpack as a default bundler 
+    // Babel is a javascript compiler & TS transpiler 
+
+    // Bundlers helps to run node modules in browsers 
+        // how ? 
+            // It combines all the files and creates one single file which is injected into the browser while running the app 
+            // It uses webpack dev server to launch the files 
+    // can we run node modules without bundlers in browser ? 
+        // yes CDNs like esm.sh, skypack.dev, or unpkg can serve Node modules as ES modules that are directly usable in the browser. These services convert Node modules into a format that browsers can understand.
+
+    // Bundler builds the file into static file like css, js, jpg, png etc
+    
+```
+
+
 
 
 ### Remaining
