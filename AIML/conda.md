@@ -15,4 +15,9 @@
 `install package` | `conda install numpy`
 `build package` | `conda build package`
 
-![idea](./conda1.png)
+![conda0](./conda1.png)
+![conda1](./conda2.png)
+![conda2](./conda3.png)
+![conda3](./conda4.png)
+![conda4](./conda5.png)
+![conda5](./conda6.png)
