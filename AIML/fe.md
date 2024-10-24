@@ -157,9 +157,25 @@ np.array(binned)
 
 
 # Feature selection steps : 
+   ### Wrapper 
+     * Forware Selection
+     * Backward Selection 
+     * Recurssive Feature Elimination
+   ### Filter 
+     * Pearson's 
+     * Kandell tau
+     * Spearman's Rho
+     * Chi2
+     * Muntual Info 
+     * F-score 
+     * Point-biserial
+   ### Embeded 
+    * Lasso 
+    * Auto encoder with bottleneck 
    ### 1)Forwad selection
    ### 2)Backwards elemination
    ### 3)Bidirectional elemination
+   
 
 
 
