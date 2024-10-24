@@ -245,7 +245,12 @@ np.array(binned)
 
 # Feature construction 
    **Feature splitting**  
-   **Feature Construction**  
+   **Feature Construction**
+   **Automatic libraries like**
+   * Pycaret
+   * Optuna
+   * feature-engine
+   * Explore-kit
 import pandas as pd
 
 df = pd.read_csv("./patient_dataset.csv")
