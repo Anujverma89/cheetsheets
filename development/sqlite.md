@@ -7,3 +7,7 @@
 *It doesnot support write concurrency i.e. one user can write at a time and multiple user can read at time*   
 *It stores data in file in B-Tree and index is stored in B-Tree* 
 *Sqlite is written in c language and it provides interface to work with different language*  
+
+**Flow of database**
+| ->Frontend | ----Data to backend-----> | Backend | -------> connected to DB ----------> | DB Server or Databse |
+|--------|----------|-------|--------------|----------|
