@@ -12,3 +12,4 @@
 | ->Frontend | ----Data to backend-----> | Backend | -------> connected to DB ----------> | DB Server or Databse |
 |--------|----------|-------|--------------|----------|
 | form data | post-get request | receive data at backend using request| sending data to database server | query received and being processed by engine | 
+| html form | https | https | JDBC or ODBC or ORM | Database server eg. MySQL , or Sqlite |
