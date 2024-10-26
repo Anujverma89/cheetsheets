@@ -24,4 +24,5 @@
 | sqlite3 databsename.db | create db in current directory | creates filename.db file in current location |
 | attach database 'dbname.db' as 'db' | used to attach file to database after creating it|attaches the given database file to database | 'temp' and 'main' cannot be used |
 | .quit | to exit of database cli | as use | not available |
+| .databases | to see databases present | as use | limited to sqlite not sql command |
 
