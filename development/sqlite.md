@@ -26,5 +26,6 @@
 | .quit | to exit of database cli | as use | limited to sqlite|
 | .databases | to see databases present | as use | limited to sqlite not sql command |
 | .help | to see different command realted help | as use | limited to sqlite |
+| .tables | to list all the tables present in the database | as use | also shows the table currently attached to sqlite using sqlite command |
 
 
