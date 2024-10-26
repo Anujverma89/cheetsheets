@@ -22,7 +22,9 @@
 |-|-|-|-|
 | ANALYSE database_name | analyse datase  | not available 
 | sqlite3 databsename.db | create db in current directory | creates filename.db file in current location |
-| attach database 'dbname.db' as 'db' | used to attach file to database after creating it|attaches the given database file to database | 'temp' and 'main' cannot be used |
-| .quit | to exit of database cli | as use | not available |
+| attach database 'dbname.db' as 'db' | used to attach file to database after creating it|attaches the given database file to database | 'temp' and 'main' cannot be used & only avaialbe for current session|
+| .quit | to exit of database cli | as use | limited to sqlite|
 | .databases | to see databases present | as use | limited to sqlite not sql command |
+| .help | to see different command realted help | as use | limit to sqlite |
+
 
