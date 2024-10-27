@@ -57,6 +57,7 @@ anddf.fillna(df['age'].mean()) # filling the none value with mean
 | df.DataFrame(data, index, columns) | to create pandas dataframe | pd.DataFrame(list or dict, columns= [], index = something) |
 | df.keys | gives name of all the columns along with data | df.keys|
 | df.insert(position_to_insert, 'column_name', vlaue=[1,2,4,5,]) | insert column into dataset at specified location | anddf.insert(1,"new",[45,34,56,77]) |
+| df.corr() | to find the corelation among numerical features of dataset  only applied on numerical features not on textual| df.corr() |
 
 
 
