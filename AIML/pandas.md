@@ -55,6 +55,9 @@ anddf.fillna(df['age'].mean()) # filling the none value with mean
 | df.index.value | to get all the indexes present in df | df.index.value |
 | df.to_numpy() | to convert data set into numpy array | df.to_numpy() |
 | df.DataFrame(data, index, columns) | to create pandas dataframe | pd.DataFrame(list or dict, columns= [], index = something) |
+| df.keys | gives name of all the columns along with data | df.keys|
+| df.insert(position_to_insert, 'column_name', vlaue=[1,2,4,5,]) | insert column into dataset at specified location | anddf.insert(1,"new",[45,34,56,77]) |
+
 
 
 
