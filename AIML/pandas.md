@@ -14,4 +14,5 @@ anddf = pd.DataFrame({
                 "age":[22,21,21,22]
 })
 series = pd.Series([22,23,24],name='age')
+# series doesnot have the name of the colum
 ```
