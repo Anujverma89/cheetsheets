@@ -105,3 +105,6 @@ another = newarray[newarray > 5]
 | **Set Operations**            | Perform operations treating arrays as sets    | `np.unique()`, `np.intersect1d()`, `np.union1d()` | ```python\na = np.array([1, 2, 3, 1])\nprint(np.unique(a))\n```                                    |
 | **Indexing and Slicing**      | Retrieve elements based on indices/conditions | `np.take()`, `np.choose()`, `np.nonzero()` | ```python\na = np.array([0, 3, 4])\nprint(np.nonzero(a))\n```                                      |
 
+
+### Furior transformation -> Conversion of data from time domation to frequency domain 
+
