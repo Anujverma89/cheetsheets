@@ -78,7 +78,7 @@
 ### Ufunc = universal function  
 *They are used to perfrom operatons on numpy array on element by element fashion rather then perform action on entire array as whoel*   
 *type(np.add) return np.ufunc*    
-*type(np.concatinate)*   
+*type(np.concatinate) returns _arrayfunctiondispatcher* 
 
 **this is filter technique**
 another = newarray[newarray > 5]
