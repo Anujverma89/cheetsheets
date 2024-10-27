@@ -4,6 +4,8 @@
 **TUTORIAL**  
 *DataFram is a two dimensional datastrucutre that can store int, character, floating point , categorial and more*   
 *Every column is series*  
+*Cleaning data is called data munging or data wrangling*
+
 
 
 # this way we can create dataframe here distinoary key becomes column
@@ -15,4 +17,8 @@ anddf = pd.DataFrame({
 })
 series = pd.Series([22,23,24],name='age')
 # series doesnot have the name of the colum
+df.describe() #is used to print the statistics
+df['age'].max() # gives max in age
+df['age'].min() # gives you min
+
 ```
