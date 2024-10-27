@@ -29,5 +29,8 @@
   ### Few functions
   | Commands | use | code |
   |-|-|-|
+  |plt.hist()| to show histogram| plt.hist()|
+  |plt.plot()| to create 2D line plot| plt.plot(x,y,label="something")|
+  |plt.legend() | to show legend the legend information is taken from label | plt.legend() |
   
   
