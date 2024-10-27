@@ -8,8 +8,10 @@
 
 # this way we can create dataframe here distinoary key becomes column
 ```py
+import pandas as pd
 anddf = pd.DataFrame({
                 "name":["anuj","akshand","rahul","vivek"],
                 "age":[22,21,21,22]
 })
+series = pd.Series([22,23,24],name='age')
 ```
