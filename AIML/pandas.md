@@ -30,5 +30,6 @@ df['age'].min() # gives you min
 df.loc[['age','roll']] #gives dataframe
 df.iloc[:1,:1]]
 anddf.loc[[1,2],['age','name']] # use to work with label based index also known as column based index.
+anddf.fillna(df['age'].mean()) # filling the none value with mean
 
 ```
