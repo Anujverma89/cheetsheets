@@ -33,3 +33,29 @@ anddf.loc[[1,2],['age','name']] # use to work with label based index also known 
 anddf.fillna(df['age'].mean()) # filling the none value with mean
 
 ```
+
+### Handeling missing values 
+| function | use | code |
+|-|-|-|
+|pd.read_csv("complatepathoffile.csv") | load csv file | pd.read_csv('filename.csv') |
+|df.to_excel('filename.xlsx') | dump some data to file | df.to_excel('filename.xlxs') |
+|df.dropna()| drop rows with null value | df.dropna() |
+|df.is_null() | find out if value is null | df.is_null()|
+|df.is_unique() | find out unique values | df.is_unique() |
+|df['column'].value_count() | to get unique values & their counts | df['sex'].value_count() |
+|df.fillna(df['age'].mean()) | fill null values with mean | df.fillna(value) |
+|df.iloc[:,:,:] | used for slicing and indexing | df.iloc[:1,:3] | 
+|df.loc[index_value] | used to access columns using row | df.loc[[1,2,3],['age','sex','name']]|
+
+
+
+
+
+
+
+
+
+
+
+
+
