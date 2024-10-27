@@ -60,6 +60,9 @@ anddf.fillna(df['age'].mean()) # filling the none value with mean
 | df.corr() | to find the corelation among numerical features of dataset  only applied on numerical features not on textual| df.corr() |
 
 
+### Plotting using df 
+df.plot(kind='scatter', x='area', y = 'feature')
+plt.show()
 
 
 
