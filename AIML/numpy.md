@@ -82,3 +82,26 @@
 
 **this is filter technique**
 another = newarray[newarray > 5]
+
+### reference
+| **Function Type**             | **Purpose**                                   | **Examples**                             | **Sample Code**                                                                                      |
+|-------------------------------|-----------------------------------------------|------------------------------------------|------------------------------------------------------------------------------------------------------|
+| **Array Creation**            | Create new arrays of specific shapes and types | `np.array()`, `np.zeros()`, `np.ones()`  | ```python\nimport numpy as np\na = np.zeros((2, 2))\nprint(a)\n```                                   |
+|                               |                                               | `np.arange()`, `np.linspace()`           | ```python\na = np.linspace(0, 1, 5)\nprint(a)\n```                                                  |
+|                               |                                               | `np.random.rand()`, `np.random.randint()`| ```python\na = np.random.randint(0, 10, (2, 3))\nprint(a)\n```                                      |
+| **Mathematical Operations**   | Perform element-wise math operations          | `np.add()`, `np.subtract()`, `np.multiply()` | ```python\na = np.array([1, 2])\nb = np.array([3, 4])\nprint(np.add(a, b))\n```                      |
+|                               |                                               | `np.exp()`, `np.log()`, `np.power()`     | ```python\na = np.array([1, 2, 3])\nprint(np.exp(a))\n```                                           |
+| **Statistical**               | Calculate stats across arrays                 | `np.sum()`, `np.mean()`, `np.std()`      | ```python\na = np.array([1, 2, 3])\nprint(np.mean(a))\n```                                          |
+|                               |                                               | `np.min()`, `np.max()`, `np.percentile()` | ```python\na = np.array([1, 3, 2])\nprint(np.percentile(a, 50))\n```                                |
+| **Array Manipulation**        | Reshape or rearrange array structure          | `np.reshape()`, `np.ravel()`, `np.flatten()` | ```python\na = np.array([[1, 2], [3, 4]])\nprint(np.reshape(a, (4,)))\n```                          |
+|                               |                                               | `np.concatenate()`, `np.vstack()`        | ```python\na = np.array([1, 2])\nb = np.array([3, 4])\nprint(np.concatenate((a, b)))\n```            |
+| **Logical**                   | Perform logical or comparison operations      | `np.greater()`, `np.less()`, `np.equal()` | ```python\na = np.array([1, 2])\nb = np.array([2, 2])\nprint(np.greater(a, b))\n```                  |
+|                               |                                               | `np.logical_and()`, `np.logical_or()`    | ```python\na = np.array([True, False])\nb = np.array([False, False])\nprint(np.logical_and(a, b))\n```|
+| **Linear Algebra**            | Perform matrix and linear algebra operations  | `np.dot()`, `np.matmul()`, `np.linalg.inv()` | ```python\na = np.array([[1, 2], [3, 4]])\nprint(np.linalg.inv(a))\n```                             |
+| **Fourier Transform**         | Analyze frequency components                  | `np.fft.fft()`, `np.fft.ifft()`          | ```python\na = np.array([1, 2, 1, -1])\nprint(np.fft.fft(a))\n```                                   |
+| **Random Number Generation**  | Generate random numbers or samples            | `np.random.rand()`, `np.random.randint()`| ```python\na = np.random.rand(2, 2)\nprint(a)\n```                                                  |
+|                               |                                               | `np.random.choice()`, `np.random.shuffle()` | ```python\na = np.array([1, 2, 3])\nnp.random.shuffle(a)\nprint(a)\n```                             |
+| **Bitwise**                   | Perform bitwise operations                    | `np.bitwise_and()`, `np.bitwise_or()`    | ```python\na = np.array([1, 2])\nb = np.array([2, 3])\nprint(np.bitwise_and(a, b))\n```             |
+| **Set Operations**            | Perform operations treating arrays as sets    | `np.unique()`, `np.intersect1d()`, `np.union1d()` | ```python\na = np.array([1, 2, 3, 1])\nprint(np.unique(a))\n```                                    |
+| **Indexing and Slicing**      | Retrieve elements based on indices/conditions | `np.take()`, `np.choose()`, `np.nonzero()` | ```python\na = np.array([0, 3, 4])\nprint(np.nonzero(a))\n```                                      |
+
