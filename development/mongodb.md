@@ -22,7 +22,7 @@
 | db.collectionName.drop() | to drop table or collection | collectionname is anything |
 | db.collectionName.insertOne() | to insert one | insertONe is case sensertive and its a function |
 | db.collectionName.insertMany({},{},{}) | to insert many | to insert many | 
-| db.CollectionName.findOne() | to find one | findMany() is also ther |
+| db.CollectionName.findOne() | to find one | findMany() is also ther  findOne() retuns all the databases|
 | db.collectionName.updateOne() | to update one | updateMany() is also there | 
 | db.collectionName.delteOne() | to delete one | delteMany() is also there |
 | db.collectionName.createIndex() | to create index | |
