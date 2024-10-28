@@ -11,5 +11,8 @@
 
   ### PL/SQL :
   * A procedural SQL that is used to extend the functionality of SQL. Stored procedure is a part of PL/SQL.
+  * PL/SQL is a complete programming language
+
+    
 
 
