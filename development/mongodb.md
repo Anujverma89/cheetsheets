@@ -1,5 +1,9 @@
 # Mongodb
 * Mongodb is a document based database which store data in json and bson form.
+* Mongsh is a shell for working with mongodb
+* Mongodb atlas is cloud based mongodb database
+* Mongod is a deamon or process that runs while starting a database
+* Runs at default port 27017
 
 ### Tutorial 
 * Table is called Collection in mongodb.
