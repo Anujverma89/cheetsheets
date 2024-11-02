@@ -1,7 +1,7 @@
 # LLM : Large Languge Models 
 * Features :
   * Have large paramaters may be billion or trillion.
-  * Can even predict result for dataset it has not been trained on.
+  * Zero shot Learning : Ability to perfrom a task for which machine learning model was not specifically trained.
 
 * Models : 
   * Machine learning models : General task in machine learning like regression, classification etc.
