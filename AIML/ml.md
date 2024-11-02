@@ -90,7 +90,7 @@
    * Batch Gradient Descent
    * Stochastic Gradient Descent
    * Mini Batch Gradient Descent
-   * `Formula weight_new= weight_old - Learning_rate * Slope of loss function with respect to given weight`
+   * Formula `weight_new= weight_old - Learning_rate * Slope of loss function with respect to given weight`
 
 
 
