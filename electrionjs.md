@@ -12,5 +12,5 @@
 
 
 * Using react
- * npm install --save react react-dom
- * npm install @babel/preset-env @babel/preset-react --save-dev (for configuration)
+  * npm install --save react react-dom
+  * npm install @babel/preset-env @babel/preset-react --save-dev (for configuration)
