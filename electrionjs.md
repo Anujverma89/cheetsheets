@@ -10,3 +10,7 @@
   * npm install -g @electron-forge/cli
   * npx electron-forge init --template=webpack
 
+
+* Using react
+ * npm install --save react react-dom
+ * npm install @babel/preset-env @babel/preset-react --save-dev (for configuration)
