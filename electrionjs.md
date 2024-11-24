@@ -14,3 +14,8 @@
 * Using react
   * npm install --save react react-dom
   * npm install @babel/preset-env @babel/preset-react --save-dev (for configuration)
+
+**NOTE**
+* You need proper configuration of babel and webpack for transpiling
+* Babel = Is a transpiler
+* Webpack : Webpack is bundler
