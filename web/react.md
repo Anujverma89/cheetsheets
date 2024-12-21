@@ -1,6 +1,19 @@
 # React : Is a Javascript library for rendering UI
 ### UI : cobination of elements like button, images and texts .
 
+### Ways to create react app : 
+* npx create-react-app@latest appname (scaffolding)
+* npm create vite@latest
+* npm create vite@latest -- --template react appname
+* npx create-next-app@latest (for next applition)
+* Setting up manually
+    * mkdir appname
+    * cd appname
+    * npm init
+    * npm install react react-dom react-router
+    * npm install -D webpack webpack-cli bable-loader @babel/core @babel/preset-react
+
+
 # concepts
 * Components
 * JSX : Javascript XML 
