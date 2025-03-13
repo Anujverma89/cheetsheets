@@ -151,7 +151,7 @@ int main(){
  * 
  * 
  * Abstraction
- *  -> Hiding the implementation detail i.e. how but what is done is always known.
+ *  -> Hiding the implementation detail i.e. how, but what is done is always known.
  * 
  * 
  * Encapsulation
