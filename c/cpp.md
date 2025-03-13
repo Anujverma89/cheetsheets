@@ -3,7 +3,7 @@
 ## Basics
 ```cpp
     /**
- * There are different ways of writing the programe and everyone's algorithm is different and unique but we select the unique one.
+ * There are different ways of writing the programe and everyone's algorithm is different and unique but we select the optimum one.
  * 
  * 
  */
