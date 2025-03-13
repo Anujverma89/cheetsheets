@@ -128,7 +128,7 @@ int main(){
  * We ofetn use namespace with scope resolution operator :: 
  * Namespace is a declerative part that helps to define the scope of varibles and functions collectively calling identifiers
  * They can only be defined globally.
- * If the identifers  doesn't have any identifier than it has by default global namespace.
+ * If the identifers  doesn't have any namespace than it has by default global namespace.
  * Using is a derecitve that elemintes specifying the scope of the identifer.
  * Namespaces can be nested into another namespace.
  * Namespace provides context to the identifier whereas the scope provides visibility to the identifer 
