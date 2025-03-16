@@ -1465,6 +1465,9 @@ int main(){
         char gender[10];
 
         public:
+        //the below syntax :age(age) is a initializer list which initializes the members without the body where member acts as a function
+        // this is mostly used to initialize the const member eg const in age (:age(age))
+
         Human(int age, const char *name):age(age){
             this->age = age;
             strcpy(this->gender,name);
@@ -1523,7 +1526,7 @@ int main(){
     // construcutor is a method of class with the same name of a class 
     // types of constructors : 
         // 1) default constructor : When no constructor is created in a classes. it is implictly created by compiler 
-        // NO argument constructor created by user itself 
+           // NO argument constructor created by user itself 
         // 2) parametrized constructor : with arguments 
         // 3) copy constructor : takes the argument of the same type and creates and object out of it.
             // In copy constructor the arguement shoudn't be call by value
@@ -1533,7 +1536,9 @@ int main(){
         // 6) Construcutors have no return type becuase of following reason : 
                 // 1) implicit return : they implictly return the object instance
                 // 2) initialization : Constructors are used to instantiate and initialize 
-                // 3) To make compiler differentiate between the method and the construtor 
+                // 3) To make compiler differentiate between the method and the construtor
+        // 7) when the permaterized construcutor is crated the default one doesn't runs at any cost.
+        // 8) When we have peramaterized constructor we also have to give the default one ourslef 
     /*
 
     NOTE : 
