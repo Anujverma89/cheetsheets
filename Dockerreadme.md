@@ -28,3 +28,5 @@
 ## Orchestration means smooth coordination between organized things. 
 * (In layman terms its organization but every thing works in synchronization) 
 
+
+## Container : A virtual isolated space which contains all seprate namespace, filesystem etc 
