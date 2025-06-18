@@ -7,6 +7,8 @@
     * Containers (Contain or store data)
     * Algorithms (Manuplate the data)
     * Iterators (Step through data)
+    * Functions (Functors)
+    * Utilites (pairs, tuple)
 
 ### Containers (Contains data)
     * Sequential (List, dequeue, list)
