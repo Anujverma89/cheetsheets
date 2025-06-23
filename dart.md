@@ -92,7 +92,9 @@ doc comment
 * Instance variables can be final but not const.
 * When we define varible with const is shared and only created once.
 * const cannot be used insite class for instance variable becuase each of the instance have differnet values which disobeys const to share one value
-* Instnace variable can be const but static const. 
+* Instnace variable can be const but static const.
+* When two const variables have same value they have same hashcode, they point to the same object in the memory. this saves the space. This is called canonicalized approach.
+* In canonicalization dart uses same memory for two or more idential vairable.
 ```dart
   final int a = 13 //valid
   const int c = Datetime.now() // invalid since the value is known at runtime
