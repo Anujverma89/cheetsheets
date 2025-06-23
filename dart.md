@@ -40,6 +40,12 @@ my_app/
 * variable declared using var keyword with initializtion is non-nullable unless assigned with null, after initialization it's value if infered and locked for lifetime.
 * variable declared using var keyword with intialization value equals to null is same as uninitialized because in both case value is null.
 
+# Late variable : 
+* Variable declared with late keywords are used to creat not null variable whose value can be assigned later.
+* It has no value unless it's initialized.
+* when initialized as nullable it has null value initially late int ?? b; can have null or int
+
+
 # Reference : 
 * To assign value to variable.
 
