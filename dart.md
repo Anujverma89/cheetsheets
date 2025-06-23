@@ -58,6 +58,24 @@ my_app/
 * very object has a hashcode.
 * Object with same content has same hashcode which can be used to compare the equality.
 
+
+# Comments: 
+
+``` dart
+// Single line comment : // here is the comment
+// Multi line comment :
+/* here is
+  multi line
+the comment
+*/
+// single line Doc comment : /// this is doc comment
+```
+```
+*  /** this is
+* multiline
+* doc comment */
+```
+
 # wrting folder strucuture and branching 
 &#x251C; - branching 
 &#x2514; - end of branch 
