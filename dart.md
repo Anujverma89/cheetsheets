@@ -83,6 +83,12 @@ doc comment
 
 ```
 
+# Final & Const 
+* They both are used to work with variable whose value doesnot change.
+* Final : Final is used for varible whose value will be assigned at runtime. Like network request, datetime
+* const : whose value is known at compile time.
+
+
 # wrting folder strucuture and branching 
 &#x251C; - branching 
 &#x2514; - end of branch 
