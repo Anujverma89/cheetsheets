@@ -87,10 +87,18 @@ doc comment
 * They both are used to work with variable whose value doesnot change.
 * Final : Final is used for varible whose value will be assigned at runtime. Like network request, datetime
 * const : whose value is known at compile time.
+* Both final and const can be null depending upon the null safety synatx but has to be declared and initialized at the same time.
+* Class level const are declared as static const;
 ```dart
   final int a = 13 //valid
   const int c = Datetime.now() // invalid since the value is known at runtime
   const int b = 134; // valid
+
+  const f  = "string" //valid
+
+  class human{
+    static const name = "string"; // valid
+  }
 ```
 
 
