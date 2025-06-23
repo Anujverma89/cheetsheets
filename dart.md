@@ -32,6 +32,14 @@ my_app/
 ```
 
 
+# Null safety : 
+* NUll safety prevents the access of the variable that has null value.
+* nullable variable : int ? a;
+* non-nullable variable : int b=13; // must be initialized at decleration
+* variable declared using var keyword without initialization is nullable. e.g var ab; ab= "string", ab = null, ab = 13 // all are correct
+* variable declared using var keyword with initializtion is non-nullable unless assigned with null, after initialization it's value if infered and locked for lifetime.
+
+
 # wrting folder strucuture and branching 
 &#x251C; - branching 
 &#x2514; - end of branch 
