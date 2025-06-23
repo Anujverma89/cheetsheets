@@ -8,8 +8,23 @@
 * importing package "package:app_name/folder/filename.dart"
 * In your package the file.dart has to be present inside the lib
 
-package_name/   
-|--/lib   
-    |-- filename.dart   
-    |-- filename2.dart   
-|--pubspec.yaml  
+# 📁 project strucutre
+
+```
+my_app/
+├── lib/
+│   ├── utils/
+│   │   └── helper.dart
+│   ├── models/
+│   │   └── user.dart
+│   ├── services/
+│   │   └── api_service.dart
+│   └── main.dart
+├── test/
+│   └── main_test.dart
+├── assets/
+│   ├── images/
+│   └── fonts/
+├── pubspec.yaml
+└── README.md
+```
