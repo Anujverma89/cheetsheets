@@ -92,6 +92,7 @@ doc comment
 * Instance variables can be final but not const.
 * When we define varible with const is shared and only created once.
 * const cannot be used insite class for instance variable becuase each of the instance have differnet values which disobeys const to share one value
+* Instnace variable can be const but static const. 
 ```dart
   final int a = 13 //valid
   const int c = Datetime.now() // invalid since the value is known at runtime
@@ -101,6 +102,7 @@ doc comment
 
   class human{
     static const name = "string"; // valid
+    const name = "something"; //invalid 
   }
 ```
 
