@@ -87,6 +87,11 @@ doc comment
 * They both are used to work with variable whose value doesnot change.
 * Final : Final is used for varible whose value will be assigned at runtime. Like network request, datetime
 * const : whose value is known at compile time.
+```dart
+  final int a = 13 //valid
+  const int c = Datetime.now() // invalid since the value is known at runtime
+  const int b = 134; // valid
+```
 
 
 # wrting folder strucuture and branching 
