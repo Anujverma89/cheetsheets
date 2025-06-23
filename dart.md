@@ -75,6 +75,12 @@ the comment
 multiline
 doc comment
 */
+/**
+  Doc comments are used as a tooptip in some ids like vscode
+  they are also used to generate the docs
+*/
+// there is not multiline comment in python. But can be written in multi line string which is ignored when not assigned to value
+
 ```
 
 # wrting folder strucuture and branching 
