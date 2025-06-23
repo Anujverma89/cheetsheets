@@ -89,6 +89,9 @@ doc comment
 * const : whose value is known at compile time.
 * Both final and const can be null depending upon the null safety synatx but has to be declared and initialized at the same time.
 * Class level const are declared as static const;
+* Instance variables can be final but not const.
+* When we define varible with const is shared and only created once.
+* const cannot be used insite class for instance variable becuase each of the instance have differnet values which disobeys const to share one value
 ```dart
   final int a = 13 //valid
   const int c = Datetime.now() // invalid since the value is known at runtime
@@ -99,6 +102,12 @@ doc comment
   class human{
     static const name = "string"; // valid
   }
+```
+
+# wild card variable : 
+* declared using _
+```dart
+
 ```
 
 
