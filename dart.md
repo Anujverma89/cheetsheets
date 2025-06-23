@@ -112,9 +112,13 @@ doc comment
 
 # wild card variable : 
 * declared using _
+* Wild card variable is a variable that get's value but it's by convention used to ingore it.
+  
 ```dart
-
+  int _ = 14; // this is wildcard variable.
+  
 ```
+
 
 
 # wrting folder strucuture and branching 
