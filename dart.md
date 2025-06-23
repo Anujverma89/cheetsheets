@@ -38,7 +38,18 @@ my_app/
 * non-nullable variable : int b=13; // must be initialized at decleration
 * variable declared using var keyword without initialization is nullable. e.g var ab; ab= "string", ab = null, ab = 13 // all are correct
 * variable declared using var keyword with initializtion is non-nullable unless assigned with null, after initialization it's value if infered and locked for lifetime.
+* variable declared using var keyword with intialization value equals to null is same as uninitialized because in both case value is null.
 
+# Reference : 
+* To assign value to variable.
+
+# Dereference : 
+* To access value from variable.
+
+
+# Hashcode : 
+* very object has a hashcode.
+* Object with same content has same hashcode which can be used to compare the equality.
 
 # wrting folder strucuture and branching 
 &#x251C; - branching 
