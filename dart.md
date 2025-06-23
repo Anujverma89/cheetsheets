@@ -71,9 +71,10 @@ the comment
 // single line Doc comment : /// this is doc comment
 ```
 ```
-*  /** this is
-* multiline
-* doc comment */
+/** this is
+multiline
+doc comment
+*/
 ```
 
 # wrting folder strucuture and branching 
