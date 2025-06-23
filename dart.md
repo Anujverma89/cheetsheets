@@ -8,7 +8,7 @@
 * importing package "package:app_name/folder/filename.dart"
 * In your package the file.dart has to be present inside the lib
 
-&#x251C;
+
 
 # 📁 project strucutre
 
@@ -30,3 +30,9 @@ my_app/
 ├── pubspec.yaml
 └── README.md
 ```
+
+
+# wrting folder strucuture and branching 
+&#x251C; - branching 
+&#x2514; - end of branch 
+&#x2502; - vertical line 
