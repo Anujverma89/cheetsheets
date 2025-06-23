@@ -8,6 +8,8 @@
 * importing package "package:app_name/folder/filename.dart"
 * In your package the file.dart has to be present inside the lib
 
+U+251C
+
 # 📁 project strucutre
 
 ```
