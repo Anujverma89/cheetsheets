@@ -44,6 +44,7 @@ my_app/
 * Variable declared with late keywords are used to creat not null variable whose value can be assigned later.
 * It has no value unless it's initialized.
 * when initialized as nullable it has null value initially late int ?? b; can have null or int
+* This is called lazy initialization.
 
 
 # Reference : 
