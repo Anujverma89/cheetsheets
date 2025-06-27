@@ -187,7 +187,22 @@ doc comment
   int function = (int x )=> x*x; //this is valid;
   int anotherfunction = (int y) => {return y*y}; // this is invalid in arrow function since cannot have {} block level in arrow function
 ```
+
 * Anonymus function : 
+```dart
+  // anonymus function has no name
+  // we can assign a function to a function variable or to var not to genreal int or string variable
+  int func1 = (){
+    return 1; // this is invalid function 
+  }
+
+  int Function() = (){
+    //this is varid function
+    return 13;
+  }
+```
+
+
 
 
 # wrting folder strucuture and branching 
