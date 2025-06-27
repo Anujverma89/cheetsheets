@@ -225,6 +225,7 @@ doc comment
     innervalue(120); // this is the closure function innvervalue() is a closure function not the valuefunc()
   }  
 
+// closure function is a function that captures the variable from it's nearby lexical scope.
 
 ```
 
