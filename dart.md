@@ -140,8 +140,15 @@ void main(){
   }).catchError((e){
     print(e)
   })
-
 }
+
+
+// await for can only be used with stream
+await for(int v in values){
+    print(v)
+}
+
+
 ```
 * Isolates( threads in box) :
   * Isolates are container which is responsible for executing certain code, with it's own memory and event loop.
