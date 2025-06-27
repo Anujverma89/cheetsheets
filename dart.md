@@ -128,25 +128,25 @@ doc comment
     print(id);
   }
 
-void main(){
-  print("this is async function");
+  void main(){
+    print("this is async function");
+  
+    // so async function can be handled in two ways:
+    // either use await to wait for value or use then() to parse the future.
+    // if we use await we will have to make function async()
+    Future<int> id = asyncfunc();
+    id.then((value){
+      print(value)
+    }).catchError((e){
+      print(e)
+    })
+  }
 
-  // so async function can be handled in two ways:
-  // either use await to wait for value or use then() to parse the future.
-  // if we use await we will have to make function async()
-  Future<int> id = asyncfunc();
-  id.then((value){
-    print(value)
-  }).catchError((e){
-    print(e)
-  })
-}
 
-
-// await for can only be used with stream
-await for(int v in values){
-    print(v)
-}
+  // await for can only be used with stream
+  await for(int v in values){
+      print(v)
+  }
 
 
 ```
