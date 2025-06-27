@@ -163,7 +163,7 @@ doc comment
     Future<int> value = Isolate.run(workerFunc);
     value.then((value){
       print(value);
-    }).catchError((valie){
+    }).catchError((value){
       print(value);
     })
 
