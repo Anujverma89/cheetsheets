@@ -153,6 +153,8 @@ doc comment
 
 * Isolates( threads in box) :
   * Isolates are container which is responsible for executing certain code, with it's own memory and event loop.
+  * Isolates run their code independently and after execution is completed they  transfer the memory containing the result to the main one.
+  * They don't share memory and have their own event loop 
 ```dart
   void main()async{
     int value = await Isolate.run(workerFunc);
@@ -171,6 +173,20 @@ doc comment
 
 ```
 
+# Functions : 
+* we cannot assign a function to a variable which is not declared a funtion variable.
+* Declaring a function varible :
+```int Function(int) variablename = (){
+    print("this is anonymus function");
+    }
+```
+
+* Arrow function
+```dart
+  int function = (int x )=> x*x; //this is valid;
+  int anotherfunction = (int y) => {return y*y}; // this is invalid in arrow function since cannot have {} block level in arrow function
+```
+* Anonymus function : 
 
 
 # wrting folder strucuture and branching 
