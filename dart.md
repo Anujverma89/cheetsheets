@@ -119,6 +119,33 @@ doc comment
   
 ```
 
+# Concurrency : Handling multiple tasks at a time though one thing is done at a time but due to high speed we get an illusion of concurrency. 
+* Asyncronous : Async , await, await for stream
+* Async function returns Future
+```dart
+  Future<void> asyncfunc() async{
+    int id = await http.get("url");
+    print(id);
+  }
+
+void main(){
+  print("this is async function");
+
+  // so async function can be handled in two ways:
+  // either use await to wait for value or use then() to parse the future.
+  // if we use await we will have to make function async()
+  Future<int> id = asyncfunc();
+  id.then((value){
+    print(value)
+  }).catchError((e){
+    print(e)
+  })
+
+}
+```
+* Isolates( threads in box) :
+  * Isolates are container which is responsible for executing certain code, with it's own memory and event loop.
+
 
 
 # wrting folder strucuture and branching 
