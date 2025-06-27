@@ -154,7 +154,19 @@ doc comment
 * **Isolates( threads in box) :**
   * Isolates are container which is responsible for executing certain code, with it's own memory and event loop.
   * Isolates run their code independently and after execution is completed they  transfer the memory containing the result to the main one.
-  * They don't share memory and have their own event loop 
+  * They don't share memory and have their own event loop
+  * Run in an Isolate is like a control that makes the code execution concurrent.
+  * run() is a control flow operator to run in parallel.
+
+  * **Types**
+  * Short Lived Isolates.
+  ```
+  //Created using Isolate.run()
+    int varone = await Isolate.run();
+  
+  ```
+  * Long Lived Isolates.
+  
 ```dart
   void main()async{
     int value = await Isolate.run(workerFunc);
