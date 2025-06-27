@@ -151,7 +151,7 @@ doc comment
 ```
 
 
-* Isolates( threads in box) :
+* **Isolates( threads in box) :**
   * Isolates are container which is responsible for executing certain code, with it's own memory and event loop.
   * Isolates run their code independently and after execution is completed they  transfer the memory containing the result to the main one.
   * They don't share memory and have their own event loop 
