@@ -181,6 +181,7 @@ doc comment
     }
 ```
 
+
 * Arrow function
 ```dart
   int function = (int x )=> x*x; //this is valid;
