@@ -154,7 +154,20 @@ doc comment
 * Isolates( threads in box) :
   * Isolates are container which is responsible for executing certain code, with it's own memory and event loop.
 ```dart
+  void main()async{
+    int value = await Isolate.run(workerFunc);
+    print(value); 
+  }
 
+  void main(){
+    Future<int> value = Isolate.run(workerFunc);
+    value.then((value){
+      print(value);
+    }).catchError((valie){
+      print(value);
+    })
+
+  }
 
 ```
 
