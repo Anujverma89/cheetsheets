@@ -175,6 +175,7 @@ doc comment
 
 # Functions : 
 * we cannot assign a function to a variable which is not declared a funtion variable.
+  
 * Declaring a function varible :
 ```int Function(int) variablename = (){
     print("this is anonymus function");
@@ -200,6 +201,31 @@ doc comment
     //this is varid function
     return 13;
   }
+```
+
+* Named function :
+```dart
+  int namedfunction(){
+    return 5+6;
+  }
+
+  var normalvar = namedfunction;
+  int Function() = namedFunction;
+
+```
+
+* Closure function:
+* Closure function is a function that is inside the another function and captures the values outside of it's lexical scope
+```dart
+// closure function in maximum times is a function inside the another function
+  int valuefunc(int a){
+    int innervalue(int b){
+      return a +b;
+    }
+    innervalue(120); // this is the closure function innvervalue() is a closure function not the valuefunc()
+  }  
+
+
 ```
 
 
