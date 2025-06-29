@@ -38,6 +38,9 @@ ________
 * `we define variable with type that means the literal of that specifc type can only be assigend to that variable`.
 * When we say the variable is type of int, it means that type of int literal can only be assigned to that variable.
 * Literal is a constant value that is assigned to the variable. It's the instance of specifc type.
+* Every variable refers to an object.
+* So the literal is an instance of a class.
+* Constructors can be used to create object like Map().
 
 * Number
 * String
@@ -52,7 +55,7 @@ ________
 * Value null
 
 ###### Other types 
-* Stream, Future, Object, Enum, Iterable, Never, Dynamic, void 
+* Stream, Future, Object, Enum, Iterable, Never, dynamic, void 
 
 * we can add any type of values in List, set, Map if we don't sepcify the type while declaring
 
