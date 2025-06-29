@@ -35,6 +35,10 @@ my_app/
 ________
 
 # Types in Dart : 
+* `we define variable with type that means the literal of that specifc type can only be assigend to that variable`.
+* When we say the variable is type of int, it means that type of int literal can only be assigned to that variable.
+* Literal is a constant value that is assigned to the variable. It's the instance of specifc type.
+
 * Number
 * String
 * Boolean
