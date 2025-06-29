@@ -149,6 +149,9 @@ void main(){
       String""";
     
     print(multline);
+
+  String a ='ab';
+  print(a.runes);
   
 }
 ```
