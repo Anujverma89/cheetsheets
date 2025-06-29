@@ -195,13 +195,13 @@ doc comment
 ```
 
 
-* Arrow function
+* **Arrow function**
 ```dart
   int function = (int x )=> x*x; //this is valid;
   int anotherfunction = (int y) => {return y*y}; // this is invalid in arrow function since cannot have {} block level in arrow function
 ```
 
-* Anonymus function : 
+* **Anonymus function** : 
 ```dart
   // anonymus function has no name
   // we can assign a function to a function variable or to var not to genreal int or string variable
@@ -215,7 +215,7 @@ doc comment
   }
 ```
 
-* Named function :
+* **Named function** :
 ```dart
   int namedfunction(){
     return 5+6;
@@ -226,7 +226,7 @@ doc comment
 
 ```
 
-* Closure function:
+* **Closure function**:
 * Closure function is a function that is inside the another function and captures the values outside of it's lexical scope
 ```dart
 // closure function in maximum times is a function inside the another function
@@ -241,7 +241,28 @@ doc comment
 
 ```
 
+* **Generator Function**
+```dart
+  // generator functions returns value over time either it is iterable or stream
+  // iterable is sync
+  // Stream is async
+  Iterable<int> genfunc()sync*{
+    for(var i =0; i<10; i++){
+      yield i;
+      sleep(Duration(seconds:1));
+    }
+  }
 
+  Stream<int> genfunc2() async*{
+    for(var i = 0; i < 10; i++){
+      yield i;
+      sleep(Duration(seconds:1));
+    }
+  }
+
+  // we can yield* to yeild the value over time one by one like yield*[1,2,3,4]
+
+```
 
 
 # wrting folder strucuture and branching 
