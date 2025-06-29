@@ -196,6 +196,28 @@ ________
     })
   }
 
+
+
+  // implimenting the long lived Isolates
+
+  void wrokerIsolate(SendPort mainIsolateSendPort){
+    ReceivePort thisrecvport = ReceivePort();
+    mainIsolateSendPort.send(thisrecvport.SendPort);
+
+    thisrecvport.listen((data){
+      print(data);
+    })
+  }
+
+
+  void main(List<String> arglist){
+    RecivePort mainrp = RecivePort();
+    var workisolate = Isolate.spawn(wrokerIsolate, mainrp.SendPort);
+    mainrp.listen((data){
+      print(data);
+    })
+  }
+
 ```
 
 __________
