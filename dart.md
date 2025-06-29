@@ -354,6 +354,18 @@ void main(){
 ___________
 
 
+# Metadata
+* Metadata gives more information about the code
+* Metadata's are used to give hints to compiler, tools and even to developers.
+```dart
+  // available metadatas;
+  @deprecated
+  @override 
+  @required // this is deprecated use required instead
+  required
+  @pragma // to give instruction to the commpiler
+
+```
 
 
 # wrting folder strucuture and branching 
