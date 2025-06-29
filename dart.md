@@ -337,6 +337,13 @@ void main(){
 }
 ``` 
 
+* **External Function**
+* External functions are defined with external keryword and defined somewhere else like extension of dart:js native css etc
+* they cannot be defined in teh same file
+```dart
+  external void externalfunction(int a); // valid one
+  external int externalinvalid(int a){return a*4}; // this is invalid one
+```
 
 ___________
 
