@@ -226,6 +226,8 @@ __________
 
 # Functions : 
 * we cannot assign a function to a variable which is not declared a funtion variable.
+* Every function returns a value.
+* If the return type is void the `return null;` is added at the end of the body implicitly.
   
 * Declaring a function varible :
 ```int Function(int) variablename = (){
