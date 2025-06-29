@@ -58,6 +58,12 @@ ________
 * Stream, Future, Object, Enum, Iterable, Never, dynamic, void 
 * we can add any type of values in List, set, Map if we don't sepcify the type while declaring
 
+### String : 
+* String holds the sequence of UTF-16.
+* It can be created using both single quote '' & double quote "".
+* String interpolation means to add some dyanamic values in string using `'THis is $dyamic value'` $dynamic get's replaced with actual value in string.
+* Can define multiline string using three quotes. """ expanding in multiple lines"""
+
 ```dart
 // types in dart 
 // number(int double)
