@@ -58,7 +58,7 @@ ________
 * Stream, Future, Object, Enum, Iterable, Never, dynamic, void 
 * we can add any type of values in List, set, Map if we don't sepcify the type while declaring
 
-### String : 
+###### String : 
 * String holds the sequence of UTF-16.
 * It can be created using both single quote '' & double quote "".
 * String interpolation means to add some dyanamic values in string using `'THis is $dyamic value'` $dynamic get's replaced with actual value in string. Putting the value of expression inside string.
@@ -66,6 +66,11 @@ ________
 * We can add escape sequence in string.
 * Concatination of string can be done using `s1+s2` that is using + operator.
 * Raw string in a dart is string whose escape sequence are not processed they remain same. `"Hello brother\n`.
+
+
+###### Runes in dart : 
+* They represent the unicode value corresponding to character.
+* The value that represent a character in unicode is runes.
 
 ```dart
 // types in dart 
