@@ -51,6 +51,9 @@ ________
 * Symbols
 * Value null
 
+###### Other types 
+* Stream, Future, Object, Enum, Iterable, Never, Dynamic, void 
+
 * we can add any type of values in List, set, Map if we don't sepcify the type while declaring
 
 
