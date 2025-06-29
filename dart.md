@@ -343,6 +343,10 @@ void main(){
 ```dart
   external void externalfunction(int a); // valid one
   external int externalinvalid(int a){return a*4}; // this is invalid one
+
+  void main(){
+    externalinvalid(14) // will produce error 
+  }
 ```
 
 ___________
