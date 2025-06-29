@@ -303,6 +303,7 @@ __________
 
 ```
 
+_______
 
 * **Tear-offs**
 * When we create a refer a function with a variable without calling it, Dart creates a tear off that is function is teared function is assigned to variable.
@@ -319,6 +320,23 @@ __________
   }
 
 ```
+_________
+
+* **Closure**
+* Unlike Tear-Off closure also refer to the variable but they are called and then the returned value is assigned to the variable;
+```dart
+// defining closure
+
+Function greeting(String name){
+  return ()=>print("Good morning $name");
+}
+
+void main(){
+  var greeter = greeting("Anuj");
+  greeter();
+}
+``` 
+
 
 ___________
 
