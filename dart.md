@@ -71,6 +71,8 @@ ________
 ###### Runes in dart : 
 * They represent the unicode value corresponding to character.
 * The value that represent a character in unicode is runes.
+* `  String a ='ab';
+  print(a.runes);`
 
 ```dart
 // types in dart 
