@@ -56,12 +56,77 @@ ________
 
 ###### Other types 
 * Stream, Future, Object, Enum, Iterable, Never, dynamic, void 
-
 * we can add any type of values in List, set, Map if we don't sepcify the type while declaring
 
-
-
 ```dart
+// types in dart 
+// number(int double)
+
+int a = 13; // number
+// no float like other languages 
+double b = 13.4; // number
+
+// we can use num for int and double whenever needed
+num value1 = 13; // can also capture 13.4 or 13 depending 
+
+String name = "Anuj"; // string
+bool value = true; // boolean
+
+// type record
+Record datab = ("name","surname","idea");
+// type function
+int Function(int age) nameoffunc = (int a){
+  return a;
+};
+
+// type list 
+// if we don't define the list with type any type of value can be added in it
+
+List ablist = [12,2,3,4,"anujd"];
+
+// the below list is not valid
+// List<int> ablist = [12,2,3,4,"anujd"];
+
+
+// set is mutable with unqie elements 
+Set<int> set1 = {1,2,3,34};
+// this is valid 
+Set set2  = {"Anuj",1,2,3};
+
+Map dict = {"Anuj":13,"Ajay":13};
+
+
+
+// escape character in string `\` this is escape character  
+String comma = 'Anuj\'s\n';
+
+
+
+void main(){
+  for(var v in ablist){
+    print(v);
+  }
+  for(var s in set1){
+    print(s);
+  }
+
+  // conversion of string to int and int to string 
+  String val = "13";
+  // String val = "this"; // this will produce an error
+  print(int.parse(val) is int);
+
+  int intval = 13;
+  print(val.toString() is String);
+
+  print(comma);
+  
+
+  for(var k in set2){
+    print(k);
+  }
+
+  
+}
 ```
 
 # Null safety : 
