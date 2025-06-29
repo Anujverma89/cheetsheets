@@ -8,6 +8,8 @@
 * importing package "package:app_name/folder/filename.dart"
 * In your package the file.dart has to be present inside the lib
 
+_______
+
 
 
 # 📁 project strucutre
@@ -30,7 +32,7 @@ my_app/
 ├── pubspec.yaml
 └── README.md
 ```
-
+________
 
 # Null safety : 
 * NUll safety prevents the access of the variable that has null value.
@@ -58,6 +60,9 @@ my_app/
 * very object has a hashcode.
 * Object with same content has same hashcode which can be used to compare the equality.
 
+________
+
+
 
 # Comments: 
 
@@ -83,6 +88,10 @@ doc comment
 
 ```
 
+___________
+
+
+
 # Final & Const 
 * They both are used to work with variable whose value doesnot change.
 * Final : Final is used for varible whose value will be assigned at runtime. Like network request, datetime
@@ -96,7 +105,8 @@ doc comment
 * When two const variables have same value they have same hashcode, they point to the same object in the memory. this saves the space. This is called canonicalized approach.
 * In canonicalization dart uses same memory for two or more idential vairable.
 * In final this is not the case.
-  
+
+
 ```dart
   final int a = 13 //valid
   const int c = Datetime.now() // invalid since the value is known at runtime
@@ -110,6 +120,8 @@ doc comment
   }
 ```
 
+___________
+
 # wild card variable : 
 * declared using _
 * Wild card variable is a variable that get's value but it's by convention used to ingore it.
@@ -118,6 +130,8 @@ doc comment
   int _ = 14; // this is wildcard variable.
   
 ```
+________
+
 
 # Concurrency : Handling multiple tasks at a time though one thing is done at a time but due to high speed we get an illusion of concurrency. 
 * Asyncronous : Async , await, await for stream
@@ -180,10 +194,13 @@ doc comment
     }).catchError((value){
       print(value);
     })
-
   }
 
 ```
+
+__________
+
+
 
 # Functions : 
 * we cannot assign a function to a variable which is not declared a funtion variable.
@@ -263,6 +280,10 @@ doc comment
   // we can yield* to yeild the value over time one by one like yield*[1,2,3,4]
 
 ```
+
+___________
+
+
 
 
 # wrting folder strucuture and branching 
