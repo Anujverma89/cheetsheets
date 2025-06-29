@@ -303,6 +303,23 @@ __________
 
 ```
 
+
+* **Tear-offs**
+* When we create a refer a function with a variable without calling it, Dart creates a tear off that is function is teared function is assigned to variable.
+* We can now call that function using that reference variable.
+```dart
+  // creating tear-offs
+  int greet(String name){
+    print("Hey, $name - Very good morning");
+  }
+
+  void main(){
+    var greeter = greet;
+    greeter("Anuj Verma");
+  }
+
+```
+
 ___________
 
 
