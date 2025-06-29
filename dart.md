@@ -77,6 +77,14 @@ ________
 ###### Grapheme clusters : 
 * Are the characters that are represented as a single character but are made up of multiple runes like '🇮🇳';
 
+
+###### Symobls : 
+* Symbols are used as a indentifer for a variable
+* `Symbol sumb1 = #variablename`
+
+###### Records : 
+* Records are immutable hetrogenrous data type that can hold any value of anylength;
+
 ```dart
 // types in dart 
 // number(int double)
