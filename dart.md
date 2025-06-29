@@ -74,6 +74,9 @@ ________
 * `  String a ='ab';
   print(a.runes);`
 
+###### Grapheme clusters : 
+* Are the characters that are represented as a single character but are made up of multiple runes like '🇮🇳';
+
 ```dart
 // types in dart 
 // number(int double)
