@@ -61,8 +61,11 @@ ________
 ### String : 
 * String holds the sequence of UTF-16.
 * It can be created using both single quote '' & double quote "".
-* String interpolation means to add some dyanamic values in string using `'THis is $dyamic value'` $dynamic get's replaced with actual value in string.
-* Can define multiline string using three quotes. """ expanding in multiple lines"""
+* String interpolation means to add some dyanamic values in string using `'THis is $dyamic value'` $dynamic get's replaced with actual value in string. Putting the value of expression inside string.
+* Can define multiline string using three quotes """ expanding in multiple lines""". Multiline strings are printed on the console in the same way they are defined.
+* We can add escape sequence in string.
+* Concatination of string can be done using `s1+s2` that is using + operator.
+* Raw string in a dart is string whose escape sequence are not processed they remain same. `"Hello brother\n`.
 
 ```dart
 // types in dart 
@@ -106,6 +109,9 @@ Map dict = {"Anuj":13,"Ajay":13};
 // escape character in string `\` this is escape character  
 String comma = 'Anuj\'s\n';
 
+String multilien = """ THis is
+  multi line
+  String """;
 
 
 void main(){
@@ -125,12 +131,17 @@ void main(){
   print(val.toString() is String);
 
   print(comma);
-  
+
+  String rawstring = r"this is raw string\n";
+  print(rawstring); // this will print same as above the \n will not be processed;
 
   for(var k in set2){
     print(k);
   }
-
+   String multline = """ This is multiline
+      String""";
+    
+    print(multline);
   
 }
 ```
