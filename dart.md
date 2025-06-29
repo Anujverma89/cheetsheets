@@ -151,7 +151,9 @@ void main(){
     print(multline);
 
   String a ='ab';
+  String heart = '💙';
   print(a.runes);
+  print(heart.runes);
   
 }
 ```
