@@ -34,6 +34,26 @@ my_app/
 ```
 ________
 
+# Types in Dart : 
+* Number
+* String
+* Boolean
+* Function
+* List
+* Record
+* Set
+* Maps
+* Runs
+* Symbols
+* Value null
+
+* we can add any type of values in List, set, Map if we don't sepcify the type while declaring
+
+
+
+```dart
+```
+
 # Null safety : 
 * NUll safety prevents the access of the variable that has null value.
 * nullable variable : int ? a;
