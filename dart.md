@@ -357,6 +357,7 @@ ___________
 # Metadata
 * Metadata gives more information about the code
 * Metadata's are used to give hints to compiler, tools and even to developers.
+* Decorator's in python work similar to metadata in dart `annotations`.
 ```dart
   // available metadatas;
   @deprecated
