@@ -12,7 +12,7 @@
 
 # 📁 project strucutre
 
-```
+``` 
 my_app/
 ├── lib/
 │   ├── utils/
