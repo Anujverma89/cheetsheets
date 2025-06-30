@@ -515,8 +515,8 @@ _____
 * Constant constructors can only be defined in a class where all attributes are final.
 ```dart
   class Human{
-    final bloodgroup;
-    final dna_structure;
+    final String bloodgroup;
+    final List<String> dna_structure;
 
     const Human(this.bloodgroup, this.dna_structure){};
     
