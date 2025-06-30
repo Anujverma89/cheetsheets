@@ -506,7 +506,17 @@ _____
 _____
 _____
 
-# OOPS 
+# OOPS : Object Oriented programming.
+* Constructors
+* Distructors
+
+* **Initializer List**
+* Initializer list is used to initialize the members attributes in constructors.
+* They were designed to initialize the constant data members of the class, since they cannot be initialized inside the body of constructor.
+* They were designed to call the super() function for inheriting classes
+```dart
+  
+```
 
 
 # wrting folder strucuture and branching 
