@@ -515,7 +515,19 @@ _____
 * They were designed to initialize the constant data members of the class, since they cannot be initialized inside the body of constructor.
 * They were designed to call the super() function for inheriting classes
 ```dart
+  class Human{
+  final int limit;
+  int ? age;
+  String ? name;
+
+  Human():limit = 60, :age :30, :name = "Anuj"{};
+
+  Human(this.age, this.name) :limit = 60{}
+
+  Human(this.age, this.name, this.limit){}
   
+
+  }
 ```
 
 
