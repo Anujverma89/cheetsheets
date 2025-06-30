@@ -510,6 +510,19 @@ _____
 * Constructors
 * Distructors
 
+* const constructors :
+* Constant constructors are designed to produce immutable objects
+* Constant constructors can only be defined in a class where all attributes are final.
+```
+  class Human{
+    final bloodgroup;
+    final dna_structure;
+
+    const Human(this.bloodgroup, this.dna_structure){};
+    
+  }
+```
+
 * **Initializer List**
 * Initializer list is used to initialize the members attributes in constructors.
 * They were designed to initialize the constant data members of the class, since they cannot be initialized inside the body of constructor.
