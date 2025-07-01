@@ -510,6 +510,14 @@ _____
 * Constructors
 * Distructors
 
+* **Types of Construcutors**
+* **Default** : It is by default, this initializes every nullable attribute with null value and non nullable values must be initialized. They don't have name, neither parameter.
+* **Generative Construcutor** : A construcutor with perameter, that is used to initialize the values. Also known as paramterized construcutors in language like cpp 
+* **Named construcutor** : Dart allwos to define constructors with different names.
+* **Constant construcutor** : Dart allows to define const construcutor in a class where all attributes are to be final. thus helping us to create fully immutable object.
+* **Redirect Construcutor** : A constructor that helps to make object through another constructor. Since Dart doesn't allow to call construcutor in the body of another constructor.
+* **Factory Construcutors** :  
+
 * const constructors :
 * Constant constructors are designed to produce immutable objects
 * Constant constructors can only be defined in a class where all attributes are final.
