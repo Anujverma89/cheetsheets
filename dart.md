@@ -565,6 +565,12 @@ _____
 * By initializing the formal parameters `Human(this.age, this.name)`
 * By using list initializer `Human() :(this.name = "Anuj"), :(this.age = 13)`
 
+# this keyword 
+* this keyword refers to the attributes and method of the current object.
+* this is not available to use in factory constructor.
+* this is not available to use in `super(this.something)` not allowed ✖️.
+* this is not allwoed in the right side of assignement operators in initializer list. `constructor(String name) : this.name = this.age` ✖️ not allowed 
+
 
 
 # wrting folder strucuture and branching 
