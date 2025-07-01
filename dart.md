@@ -555,6 +555,14 @@ _____
 # Access Modifiers : 
 * Dart have only one access modifier that is private.
 * Every variables , class , methods, mixins starting with this are private.
+* Dart have implict public modifier, Every modifier without _ is a public variable which is accessible from anywhere.
+
+
+# Initialization of attributes in dart : 
+* Initialize while you declare it.`String name = "Anuj";` 
+* By initializing the formal parameters `Human(this.age, this.name)`
+* By using list initializer `Human() :(this.name = "Anuj"), :(this.age = 13)`
+
 
 
 # wrting folder strucuture and branching 
