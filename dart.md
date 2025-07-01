@@ -556,6 +556,9 @@ _____
 
 
 # ways to initialize the attributes of super class.
+* A subclass cannot inherit the constructor of a super class.
+* It can only inherit the parameter of super class they are called super parameters.
+* The super parameters can be initialized using `super.parameter` in the subclass constructors. 
 ```dart
   // using super.paramtername in subclass paramter list
   // using the super() construcutor
