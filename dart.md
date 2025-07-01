@@ -550,6 +550,11 @@ _____
 
   }
 ```
+_____
+
+# Access Modifiers : 
+* Dart have only one access modifier that is private.
+* Every variables , class , methods, mixins starting with this starts with mixins.
 
 
 # wrting folder strucuture and branching 
