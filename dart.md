@@ -541,7 +541,9 @@ _____
   int ? age;
   String ? name;
 
-  Human():limit = 60, :age :30, :name = "Anuj"{};
+  // this is the way we define a initializer list.
+  // the list can be assinged all the values in a function
+  Human(int limit, int age, String name):this.limit = 60, this.age =30, this.name = "Anuj";
 
   Human(this.age, this.name) :limit = 60{}
 
