@@ -554,6 +554,39 @@ _____
 ```
 _____
 
+
+# ways to initialize the attributes of super class.
+```dart
+  // using super.paramtername in subclass paramter list
+  // using the super() construcutor
+  class Animal{
+    String ? name;
+    int ? age_limit;
+    Animal(this.name, this.age_limit);
+  }
+  
+  class Dog extends Animal{
+      int? age;
+      String ? breed;
+  
+      Dog(super.name, super.age_limit, this.age, this.breed);
+      Dog.Super(String name, String breed, int age, int age_limit) : this.age = age, this.breed = breed, super(name, age_limit);
+  
+      void bark(){
+        print("Bhaw, bhaw");
+      }
+  
+  }
+  
+  void main(){
+    Dog Labra = Dog("Tyson", 20, 2, "Labrador");
+    Dog samreen = Dog.Super("Samreen", "Germam Shipherd", 2, 34);
+    print(samreen.age);
+    Labra.bark();
+}
+```
+
+
 # Access Modifiers : 
 * Dart have only one access modifier that is private.
 * Every variables , class , methods, mixins starting with this are private.
@@ -570,6 +603,8 @@ _____
 * this is not available to use in factory constructor.
 * this is not available to use in `super(this.something)` not allowed ✖️.
 * this is not allwoed in the right side of assignement operators in initializer list. `constructor(String name) : this.name = this.age` ✖️ not allowed 
+
+
 
 
 
