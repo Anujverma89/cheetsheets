@@ -447,6 +447,7 @@ _______
 * Tear offs are reference to a function not a calling to a function
 * Constructor tear offs also exists.
 * We can now call that function using that reference variable.
+* pass named constructor as `class.constructorname` and unnamed consturctor as  `classname.new`
 ```dart
   // creating tear-offs
   int greet(String name){
