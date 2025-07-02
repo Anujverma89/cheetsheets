@@ -675,6 +675,39 @@ _____
   }
 
 ```
+# Methods : 
+* Every function inside a class is a method.
+* Types : Abstract, getter and setter
+
+# Getters and Setters 
+* Every memeber property has implicit getters and setters if applicable.
+
+# Abstract classes : 
+* Classes which have abstract methods
+```dart
+  abstract class Actions{
+    void speak();
+  }
+
+  class Human extends Actions{
+
+    void speak(){
+      print("Hey");
+    }  
+  }
+
+```
+
+
+# Abstract methods : 
+* Methods which have just decleration but no defination saying that they just have signature no body.
+* Abstract method has to be implimented by a subclass inheriting a abastract class.
+* they are functions without body inside a abstract class.
+```dart
+  abstract class Actions{
+    void speak();
+  }
+```
 
 
 
