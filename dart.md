@@ -805,6 +805,100 @@ _____
 * Abstract class and mixins can extend Enum but it can only be used inside the enum not anywhere else.
 
 
+# Extension methods : 
+* Extension method is a way to extend the features of a class that don't we don't control.
+* Like we can add some extra feature on String class.
+* There can be unnamed extensions.
+* There can be generic extensions as well.
+* Extensions can’t access private members of the type.
+* You’re not changing the original class — just adding new syntax sugar.
+  
+```dart
+    // here we have added the extension to a String which can be used on any string;
+  extension Maybe on String{
+      String AddMaybe(){
+        return this+" maybe";
+      }
+  }
+  
+  void main(){
+    String name = "I's possible";
+    String modified = name.AddMaybe();
+    print(modified);
+  }
+```
+
+# Extension Type : 
+* Extension type is like defining a new type on top of existing type with some added and additional properties.
+* It's similar to typedef but it creates complete new type where as typedef just creates and alias
+* We can add custom features to type.
+* It is experimental and it is new in dart 3.3 +
+```dart
+  extension Manybe on String{
+    String AddMaybe(){
+      return this+" maybe";
+    }
+  }
+  
+  // here we have created a intiger that is 100 times stronger than regular int.
+  extension type BraveInt(int a){
+      int braveInt(){
+        return a*100;
+      }
+  }
+  
+  void main(){
+    BraveInt ab = new BraveInt(14);
+    print(ab.braveInt());
+  
+    String name = "I's possible";
+    String modified = name.AddMaybe();
+    print(modified);
+  }
+
+```
+
+
+# Callable object : 
+* Callable object in dart are object which can be called like functions.
+* They can be created with call() function implimented in them.
+* They are mostly used in flutter.
+```dart
+  extension Manybe on String{
+  String AddMaybe(){
+    return this+" maybe";
+  }
+}
+    
+    // here we have created a intiger that is 100 times stronger than regular int.
+    extension type BraveInt(int a){
+        int braveInt(){
+          return a*100;
+        }
+    }
+    
+    class Callabe{
+      String ? name ;
+    
+      Callabe(this.name);
+    
+      String call(){
+        return "Hello $name";
+      }
+    }
+    
+    void main(){
+      BraveInt ab = new BraveInt(14);
+      print(ab.braveInt());
+    
+      Callabe c1 = new Callabe("Anuj Verma");
+      print(c1());
+    
+      String name = "I's possible";
+      String modified = name.AddMaybe();
+      print(modified);
+    }
+```
 
 # wrting folder strucuture and branching 
 &#x251C; - branching 
