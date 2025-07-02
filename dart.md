@@ -737,6 +737,7 @@ _____
 
 # Mixins : 
 * Mixin are the classes without the constructors, they are used to provide functionality to other class.
+* They are called mixins becuase they can be mixed with other classes.
 * Mixins are used to provide additional functionality to the class without extending or implimenting a class.
 * with keyword is used to use the functionality of the mixins
 * they are implimented with mixins, or mixins class.
@@ -795,6 +796,13 @@ _____
 ```
 
 
+# Enums , Enumerations, Sealed: 
+* Enums are the classes with fixed no of constant values;
+* they are called sealed becuase they cannot be inherited, mixed, implimented.
+* they can simply be made like this `enum Color {blue, green, red}`
+* they can also be implimented as class with some advancements and precautions.
+* every enum extends the Enum class.
+* Any class can extend Enum but it can only be used inside the enum not anywhere else.
 
 
 
