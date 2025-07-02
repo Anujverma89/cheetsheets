@@ -802,7 +802,7 @@ _____
 * they can simply be made like this `enum Color {blue, green, red}`
 * they can also be implimented as class with some advancements and precautions.
 * every enum extends the Enum class.
-* Any class can extend Enum but it can only be used inside the enum not anywhere else.
+* Abstract class and mixins can extend Enum but it can only be used inside the enum not anywhere else.
 
 
 
