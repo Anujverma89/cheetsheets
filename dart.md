@@ -444,6 +444,8 @@ _______
 
 * **Tear-offs**
 * When we create a refer a function with a variable without calling it, Dart creates a tear off that is function is teared function is assigned to variable.
+* Tear offs are reference to a function not a calling to a function
+* Constructor tear offs also exists.
 * We can now call that function using that reference variable.
 ```dart
   // creating tear-offs
