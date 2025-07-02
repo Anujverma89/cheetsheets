@@ -531,6 +531,50 @@ _____
   }
 ```
 
+* **Factory Constructor**
+* Factory constructors are used when class doesn't always return the new instance.
+* It can return the existing instance.
+* Factory constructor cannot access this.
+* Factory constructors are used when we want to simply return an existing instance then to create it.
+* We cannot return object inside a construcutor but can do inside a factory.
+* Factory constructors are used to do the desired thing with class which cannot be done inside the constructor.
+* Factory construcutors are classes level.
+* They are not instance level we cannot use the instance inside the factory construcutor.
+
+```dart
+  // here we will study about factory constructor 
+  class Analyser{
+    String ? _subject;
+    static final Analyser __Analyse = Analyser._internal("Science");
+  
+    factory Analyser(){
+      return __Analyse;
+    }
+  
+    Analyser._internal(this._subject);
+  
+  }
+  
+  class Analyseer{
+    String ? _subject;
+    static final Analyseer __Analysee = Analyseer._internal("Science");
+  
+    // we cannot do the same process as above in the current context
+    Analyseer(this._subject);
+  
+    Analyseer._internal(this._subject);
+  
+  }
+  
+  void main(){
+    Analyser anal = new Analyser();
+    Analyser anal2 = new Analyser();
+    print(anal._subject);
+    print(anal2._subject);
+    print(identical(anal, anal2));
+  }
+```
+
 * **Initializer List**
 * Initializer list is used to initialize the members attributes in constructors.
 * They were designed to initialize the constant data members of the class, since they cannot be initialized inside the body of constructor.
@@ -600,6 +644,8 @@ _____
 * Initialize while you declare it.`String name = "Anuj";` 
 * By initializing the formal parameters `Human(this.age, this.name)`
 * By using list initializer `Human() :(this.name = "Anuj"), :(this.age = 13)`
+
+
 
 # this keyword 
 * this keyword refers to the attributes and method of the current object.
