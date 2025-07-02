@@ -900,6 +900,17 @@ _____
     }
 ```
 
+# Class Modifiers : 
+* They are use to modify and create class.
+* they are `abstract base final interface sealed mixin`
+* **Abstract** keyword is used to create abstract class.
+* **Base class** A class marked with base can only be extended or implemented by other classes that are explicitly marked as base, final, or sealed.
+* This prevents unintended or accidental subclassing by external libraries or in large codebases
+* **final** keyword is used to create a class that cannot be further extend
+* **interfaces** interfaces are ways to design compulsive implimentation.
+* **Sealed**  sealed is used to define enums
+* **mixin** mixins are used to create mixin class that can be used to other class
+
 # wrting folder strucuture and branching 
 &#x251C; - branching 
 &#x2514; - end of branch 
