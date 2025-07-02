@@ -681,6 +681,32 @@ _____
 
 # Getters and Setters 
 * Every memeber property has implicit getters and setters if applicable.
+* In dart it is recommended to define getters and setters with same name as variable using set or get keyword.
+* If we define with other names they act as normal method and can be worked around in same way
+```dart
+
+  class Blueprint{
+    int ? age;
+    String ? name;
+
+    void greet(){
+        print("hey");
+    }
+  }
+
+  class Actual impliments Blueprint{
+    int ? _age;
+    String ? _ name;
+    // we have to define getters and setters for the same
+    set age(int ? age) => this._age = age;
+    set name(String ?name) => this._name = name;
+
+    int get age=> this._age;
+    String get name => this._name;
+  
+  }
+
+```
 
 # Abstract classes : 
 * Classes which have abstract methods
