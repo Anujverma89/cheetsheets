@@ -911,6 +911,22 @@ _____
 * **Sealed**  sealed is used to define enums
 * **mixin** mixins are used to create mixin class that can be used to other class
 
+# Statement : 
+* Statement is a line of code or block of code that says computer to do something. Like give instructions.
+# Expressoin : 
+* Expression is something that executes the value.
+
+# Patterns : 
+* Patterns are used to match against certain values.
+* patterns are used to perfrom certain actions in dart like  Switch, Destructuring 
+* swtich
+* for in
+* Destructuring
+* List matching
+* if case
+* **cast** `(num, Object) record = (1, 's'); var (i as int, s as String) = record;`
+  
+
 # wrting folder strucuture and branching 
 &#x251C; - branching 
 &#x2514; - end of branch 
