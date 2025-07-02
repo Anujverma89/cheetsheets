@@ -735,6 +735,26 @@ _____
   }
 ```
 
+# Mixins : 
+* Mixins are used to provide additional functionality to the class without extending or implimenting a class.
+* with keyword is used to use the functionality of the mixins
+* they are implimented with mixins, or mixins class.
+* mixins, mixins class work in similar way.
+* if mixins are declared with mixins class this class can be used both as super class and mixins.
+```dart
+  mixin Features{
+    void sayHey(Sting ? name){
+      print("Hey $name");
+    }
+  }
+
+  class Acutual with Features{
+    String ? name;
+    Actual(this.name);
+  }
+
+```
+
 
 
 
