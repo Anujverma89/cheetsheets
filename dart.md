@@ -741,18 +741,36 @@ _____
 * they are implimented with mixins, or mixins class.
 * mixins, mixins class work in similar way.
 * if mixins are declared with mixins class this class can be used both as super class and mixins.
+  
 ```dart
-  mixin Features{
-    void sayHey(Sting ? name){
-      print("Hey $name");
+  mixin class Features{
+    void SayHey(String ? name){
+        print("Hello $name");
     }
   }
-
-  class Acutual with Features{
+  
+  
+  class Actual with Features{
     String ? name;
     Actual(this.name);
   }
 
+  class Bro extends Feautres{
+
+  @override
+  void sayHey(){
+    print("HEy borther");
+  }
+  }
+
+  // here we can use the features of feature class with inheriting the features
+  // here the Features can be extended
+
+
+  void main(){
+    Actual ac = new Actual("Verma");
+    ac.SayHey("ANuj");
+  }
 ```
 
 
