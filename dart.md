@@ -736,12 +736,14 @@ _____
 ```
 
 # Mixins : 
+* Mixin are the classes without the constructors, they are used to provide functionality to other class.
 * Mixins are used to provide additional functionality to the class without extending or implimenting a class.
 * with keyword is used to use the functionality of the mixins
 * they are implimented with mixins, or mixins class.
 * mixins, mixins class work in similar way.
 * if mixins are declared with mixins class this class can be used both as super class and mixins.
-  
+* We can also define abastract methods in mixins and they has to be define the class using the mixin.
+* THe on clause is used to limit the scope where mixin can be used. if we use on mixins can only be used in class that extends the class used with on in mixin.
 ```dart
 
   // here we can use the features of feature class with inheriting the features
@@ -775,6 +777,20 @@ _____
     Bro bc = new Bro();
     bc.SayHey("ANuj");
   }
+
+  class Animal {
+    void move() => print("Animal moves");
+  }
+
+  mixin Flyer on Animal {
+    void fly() {
+      print("Flying");
+    }
+  }
+  
+  class Bird extends Animal with Flyer {}  // ✅ Works, because Bird extends Animal
+  
+  class Dog with Flyer {}  // ❌ Error: Dog does not extend Animal
 
 ```
 
