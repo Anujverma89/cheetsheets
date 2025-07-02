@@ -743,6 +743,11 @@ _____
 * if mixins are declared with mixins class this class can be used both as super class and mixins.
   
 ```dart
+
+  // here we can use the features of feature class with inheriting the features
+  // here the Features can be extended
+  // mixins are used to provide additional featurs to classes.
+
   mixin class Features{
     void SayHey(String ? name){
         print("Hello $name");
@@ -754,23 +759,23 @@ _____
     String ? name;
     Actual(this.name);
   }
-
-  class Bro extends Feautres{
-
-  @override
-  void sayHey(){
-    print("HEy borther");
+  
+  
+  class Bro extends Features{
+    
+    @override
+    void SayHey(String ?name){
+      print("HEy Brother");
+    }
   }
-  }
-
-  // here we can use the features of feature class with inheriting the features
-  // here the Features can be extended
-
-
+  
   void main(){
     Actual ac = new Actual("Verma");
     ac.SayHey("ANuj");
+    Bro bc = new Bro();
+    bc.SayHey("ANuj");
   }
+
 ```
 
 
