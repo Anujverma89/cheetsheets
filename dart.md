@@ -510,6 +510,7 @@ _____
 _____
 
 # OOPS : Object Oriented programming.
+* Every class in language like dart, python , java is an instance of Object they inherit implicitly, but in C++ it is different.
 * Constructors
 * Distructors
 
