@@ -34,6 +34,16 @@ my_app/
 ```
 ________
 
+
+# Control flow : 
+###### Loops 
+* `for , while, do-while, for in , break , continue, labels`
+###### Branches 
+* `switch, if, if-case`
+###### Exceptions : 
+* `assert, try , catch , throw, finally`
+* `assert` is only used for debugging purpose
+
 # Types in Dart : 
 * `we define variable with type that means the literal of that specifc type can only be assigend to that variable`.
 * When we say the variable is type of int, it means that type of int literal can only be assigned to that variable.
