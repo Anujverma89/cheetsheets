@@ -930,13 +930,23 @@ _____
 * Expression is something that executes the value.
 
 # Patterns : 
+* The primary task of pattern is to compare between things.
 * Patterns are used to match against certain values.
-* patterns are used to perfrom certain actions in dart like  Switch, Destructuring 
+* They are used for destructuing.
 * swtich
 * for in
 * Destructuring
 * List matching
 * if case
+* **Types of patterns**
+* ` Logical Patterns (AND, OR, NOT)`
+* ` Null-check Patterns`
+* `Record Pattern`
+* `Type Pattern`
+* `Constant Pattern`
+* ` List Pattern`
+* `Object Pattern`
+  
 * **cast** `(num, Object) record = (1, 's'); var (i as int, s as String) = record;`
 ```dart
   // patterns are just a syntatic category like expression , statement. 
