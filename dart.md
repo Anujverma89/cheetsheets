@@ -938,7 +938,7 @@ _____
 * List matching
 * if case
 * **cast** `(num, Object) record = (1, 's'); var (i as int, s as String) = record;`
-```
+```dart
   // patterns are just a syntatic category like expression , statement. 
   // they are used to match pattern and destrucuter a value or both.
   // using pattern 
@@ -950,7 +950,18 @@ _____
   // types : 
   // 1) Swtich-case (constant matching)
   // 2) for , for -in 
-  // 3) if-case 
+  // 3) if-case
+  void main(){
+    List a  = [1,2,3,4];
+
+    if(a case [1,2]){
+        print("yes ");
+    }else if (a case [1,2,3]){
+        print("Yes");
+    }else{
+        print("NO");
+      }
+  }
 ```
   
 
