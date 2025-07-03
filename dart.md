@@ -38,14 +38,53 @@ ________
 # Control flow : 
 ###### Loops 
 * `for , while, do-while, for in , break , continue, labels`
-* patterns are used with if case.
-
-
+* patterns are used with if case and also with swtich.
 ###### Branches 
 * `switch, if, if-case`
 ###### Exceptions : 
 * `assert, try , catch , throw, finally`
 * `assert` is only used for debugging purpose
+
+# Exceptions : 
+```dart
+  // exception handeling 
+  // try, catch , finally ,throw, assert
+  // when exception occures it is thrown 
+  // that thrown has to be caught in catch
+  // throw("message of error");
+  
+  int ? value ;
+  void throwing(bool throwing){
+    if(throwing == true){
+      print("Correct");
+    }else{
+      throw(" The value is false");
+    }
+  }
+  
+  void main (){
+  
+    try{
+      print(value!/4);
+    }catch(e){
+      print(e);
+    }finally{
+      print("executed the programme");
+    }
+  
+    
+  
+    try{
+      throwing(false);
+    }catch(e){
+      print(e);
+    }finally{
+      print("ececuted");
+    }
+  }
+
+```
+
 
 # Types in Dart : 
 * `we define variable with type that means the literal of that specifc type can only be assigend to that variable`.
