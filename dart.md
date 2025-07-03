@@ -38,6 +38,9 @@ ________
 # Control flow : 
 ###### Loops 
 * `for , while, do-while, for in , break , continue, labels`
+* patterns are used with if case.
+
+
 ###### Branches 
 * `switch, if, if-case`
 ###### Exceptions : 
@@ -935,6 +938,20 @@ _____
 * List matching
 * if case
 * **cast** `(num, Object) record = (1, 's'); var (i as int, s as String) = record;`
+```
+  // patterns are just a syntatic category like expression , statement. 
+  // they are used to match pattern and destrucuter a value or both.
+  // using pattern 
+  // 1) we can check shape of something 
+  // 2) check if its constant
+  // 3) check it's equal to something else
+  // 4) has certain type.
+  
+  // types : 
+  // 1) Swtich-case (constant matching)
+  // 2) for , for -in 
+  // 3) if-case 
+```
   
 
 # wrting folder strucuture and branching 
