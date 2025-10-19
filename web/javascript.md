@@ -1898,13 +1898,19 @@ console.log(Array.isArray(newarryform));
 ```
 
 
+# Holes : 
+* Holes in javascript are the empty space in the array that occupy no values neither null, nor undefined.
+* eg : const arr = new Array(6);
+* Above code will create an Array of 6 digits with holes means nothing exists. it will return and empty value.
+* The return of arr[1] will be empty ? 
+
 
 
 ### Remaining
 ```js
-    : iterators
-    : generators 
-    : modules 
-    : asynchronous 
+    : iterators : are used to iterator over values like array 
+    : generators : Generators are the functions which can continiously return the value while normal functions return the value for once.
+    : modules : Files with independed code.
+    : asynchronous : Task that takes extra time to perform some work can be executed in another pipleline and other can execute the code without being blocked.
     : Node
 ```
