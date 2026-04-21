@@ -41,3 +41,13 @@ fetches HTML, CSS, JS from internet
 GPU / Compositor
 final rendering
 
+# React & Rendering : 
+ * 1) Development in react.
+   2) Build application
+   3) Generates necessary components like menifest.json. js bundle, css and html file
+   4) js bundle : React Library + Main Js file
+   5) Rendering happens in browser. 
+
+
+
+
