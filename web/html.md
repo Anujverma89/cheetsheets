@@ -1,10 +1,43 @@
 # HTMl 
 
-* Raw HTML
+* 1) Raw HTML
 |-- DOM (Document Object Model)
 
-* Raw CSS
+* 1) Raw CSS
 |-- CSSOM
 
-* DOM + CSSOM = ( Render Tree ) 
+* 2) DOM + CSSOM = ( Render Tree ) 
+
+* 3) Layout ( Reflow )
+  * Which element goes where.
+  * Height, widht, x, y
+
+* 4) paint the UI
+  * Paint engine + Rasterizer
+ 
+* 5) Show the UI ( GPU + Compositor)
+ 
+
+* You can think of the browser like this:
+
+Browser Engine
+coordinates everything
+
+Rendering Engine
+HTML Parser → DOM
+
+CSS Parser → CSSOM
+Layout + Paint
+
+JavaScript Engine
+executes JS (like V8)
+
+UI Backend
+draws basic widgets (buttons, scrollbars)
+
+Networking
+fetches HTML, CSS, JS from internet
+
+GPU / Compositor
+final rendering
 
