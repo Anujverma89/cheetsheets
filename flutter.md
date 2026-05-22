@@ -20,3 +20,21 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 )
 
 ```
+
+
+
+## Custom Icons 
+```
+```
+
+
+
+### Custom Fonts 
+```
+```
+
+
+
+### Custom Theme 
+```
+```
