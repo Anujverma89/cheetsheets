@@ -25,12 +25,35 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 
 ## Custom Icons 
 ```
+* Create svg files for you icons.
+* add them in a folder inside asset as svgicons.
+* now add the package
 ```
 
 
 
 ### Custom Fonts 
 ```
+```
+
+
+
+## Adding launcher icons : 
+* Add your Flutter Launcher Icons configuration to your pubspec.yaml.
+
+```yaml
+dev_dependencies:
+  flutter_launcher_icons: "^0.14.4"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+\\ flutter pub get
+\\ dart run flutter_launcher_icons
+
 ```
 
 
