@@ -27,7 +27,21 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 ```
 * Create svg files for you icons.
 * add them in a folder inside asset as svgicons.
-* Go to (Image)[https://www.fluttericon.com/]
+* Go to [fluttericon](https://www.fluttericon.com/)
+* drag and drop all the icons
+* now click on download
+* zip file will be download
+* place the .ttf file in assets/fonts
+* place .dart file in lib folder
+
+Add following in pubspec.yaml
+  fonts:
+     - family: MyCustomIcons
+       fonts:
+         - asset: path_to_custom_font.ttf
+
+
+* Now use it using className.iconsName, in my case its MyCustomIcons.iconsname
 ```
 
 
