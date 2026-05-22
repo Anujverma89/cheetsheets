@@ -27,7 +27,7 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 ```
 * Create svg files for you icons.
 * add them in a folder inside asset as svgicons.
-* now add the package
+* Go to (Image)[https://www.fluttericon.com/]
 ```
 
 
