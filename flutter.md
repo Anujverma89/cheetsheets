@@ -38,7 +38,7 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 
 
 
-## Adding launcher icons : 
+## Adding launcher icons : Launcher icon is used to show the mobile app logo in mobile phones. 
 * Add your Flutter Launcher Icons configuration to your pubspec.yaml.
 
 ```yaml
@@ -51,6 +51,7 @@ flutter_launcher_icons:
   image_path: "assets/icon/icon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
 
+\\ commands to run after you have added above snippet in yaml file.
 \\ flutter pub get
 \\ dart run flutter_launcher_icons
 
