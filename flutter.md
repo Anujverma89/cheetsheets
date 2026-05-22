@@ -24,29 +24,31 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 
 
 ## Custom Icons 
+
 ```
-* Create svg files for you icons.
-* add them in a folder inside asset as svgicons.
-* Go to [fluttericon](https://www.fluttericon.com/)
-* drag and drop all the icons
-* now click on download
-* zip file will be download
-* place the .ttf file in assets/fonts
-* place .dart file in lib folder
-
-Add following in pubspec.yaml
-  fonts:
-     - family: MyCustomIcons
-       fonts:
-         - asset: path_to_custom_font.ttf
-
-
-* Now use it using className.iconsName, in my case its MyCustomIcons.iconsname
+  * Create svg files for you icons.
+  * add them in a folder inside asset as svgicons.
+  * Go to [fluttericon](https://www.fluttericon.com/)
+  * drag and drop all the icons
+  * now click on download
+  * zip file will be download
+  * place the .ttf file in assets/fonts
+  * place .dart file in lib folder
+  
+  Add following in pubspec.yaml
+    fonts:
+       - family: MyCustomIcons
+         fonts:
+           - asset: path_to_custom_font.ttf
+  
+  
+  * Now use it using className.iconsName, in my case its MyCustomIcons.iconsname
 ```
 
 
 
 ### Custom Fonts 
+
 ```
 ```
 
@@ -75,4 +77,39 @@ flutter_launcher_icons:
 
 ### Custom Theme 
 ```
+```
+
+
+
+
+
+### Adding splash screen 
+```
+   Splash screen in flutter is created actually before app loads and is not done by flutter.
+   It takes place before flutter loads in memory.
+
+* There are two ways to add splash screen :
+  * Add a package in pubspec.yaml
+pubspec.yaml
+
+  dependencies:
+    flutter:
+      sdk: flutter
+    flutter_native_splash: ^2.4.7
+
+
+  flutter_native_splash:
+  color: "#42a5f5"
+  image: assets/images/text_logo.png
+  fullscreen: true
+  android_12:
+    color: "#42a5f5"
+    image: assets/images/text_logo.png
+    icon_background_color: "#111111"
+
+run : Flutter pub get
+and : dart run flutter_native_splash:create
+
+* Do it manually : 
+
 ```
