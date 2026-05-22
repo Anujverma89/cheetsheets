@@ -106,6 +106,9 @@ pubspec.yaml
     color: "#42a5f5"
     image: assets/images/text_logo.png
     icon_background_color: "#111111"
+  branding: assets/images/branding.png
+
+// brading is used to put the tag or something at the bottom of the screen
 
 run : Flutter pub get
 and : dart run flutter_native_splash:create
@@ -115,7 +118,8 @@ and : dart run flutter_native_splash:create
 NOTE : 
 
   * Icon should be 960*960 with background and fit in 640 pixels diameter. 
-  * Icon should be 1152*1152 without background and the fit inside 768 pixels diameter 
+  * Icon should be 1152*1152 without background and the fit inside 768 pixels diameter
+  * size of branding image should be 800*320  
 
 
 
