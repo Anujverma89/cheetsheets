@@ -84,13 +84,14 @@ flutter_launcher_icons:
 
 
 ### Adding splash screen 
-```
-   Splash screen in flutter is created actually before app loads and is not done by flutter.
-   It takes place before flutter loads in memory.
+* Splash screen in flutter is created actually before app loads and is not done by flutter.
+* It takes place before flutter loads in memory.
 
 * There are two ways to add splash screen :
-  * Add a package in pubspec.yaml
-pubspec.yaml
+* Add a package in pubspec.yaml
+* brading is used to put the tag or something at the bottom of the screen
+  
+```pubspec.yaml
 
   dependencies:
     flutter:
@@ -108,12 +109,11 @@ pubspec.yaml
     icon_background_color: "#111111"
   branding: assets/images/branding.png
 
-// brading is used to put the tag or something at the bottom of the screen
-
 run : Flutter pub get
 and : dart run flutter_native_splash:create
 
-* Do it manually : 
+* Do it manually :
+
 ```
 NOTE : 
 
