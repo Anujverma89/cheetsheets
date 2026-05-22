@@ -88,6 +88,9 @@ flutter_launcher_icons:
    Splash screen in flutter is created actually before app loads and is not done by flutter.
    It takes place before flutter loads in memory.
 
+  Icon should be 960*960 with background and fit in 640 pixels diameter. 
+  Icon should be 1152*1152 without background and the fit inside 768 pixels diameter 
+
 * There are two ways to add splash screen :
   * Add a package in pubspec.yaml
 pubspec.yaml
