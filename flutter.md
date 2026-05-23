@@ -129,9 +129,12 @@ NOTE :
     * Use tools like lottie or Rive and export in flutter.
   * Code based animation
     * Implicit Animation.
-      * We won't have to write code for animation. 
+      * We won't have to write code to animate. they get animated on their own. we just declare the animation and it's available.
     * Explicit Animation.
       * We have to define everything for animation.
+        * When it repeats forever.
+        * When it is discontinious.
+        * When multiple widgets animate together.
     
       
 
