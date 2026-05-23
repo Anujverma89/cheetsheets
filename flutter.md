@@ -123,3 +123,15 @@ NOTE :
 
 
 
+### Animation : 
+* Flutter animation
+  * Drawing based animation ( Used for heavy animation like drawing or something)
+    * Use tools like lottie or Rive and export in flutter.
+  * Code based animation
+    * Implicit Animation.
+      * We won't have to write code for animation. 
+    * Explicit Animation.
+      * We have to define everything for animation.
+    
+      
+
