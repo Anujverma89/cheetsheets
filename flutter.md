@@ -151,5 +151,6 @@ Hero(
 AnimatedOpacity()
 
 ```
-      
+
+Note : For complex animation which are difficult to express in terms of code use lottie to generate a json format and use it in mobile.
 
