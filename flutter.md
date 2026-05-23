@@ -135,6 +135,21 @@ NOTE :
         * When it repeats forever.
         * When it is discontinious.
         * When multiple widgets animate together.
-    
+       
+```dart
+// Implicit animation builtin classes
+AnimatedContainer(
+  duration:Duration(seconds: 2)
+  child: Image.asset("filepath")
+  curve : Cruves.Linear,
+)
+
+Hero(
+  tag:"name"
+  child: Image.asset("path_to_image")
+)
+AnimatedOpacity()
+
+```
       
 
