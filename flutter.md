@@ -152,5 +152,12 @@ AnimatedOpacity()
 
 ```
 
-Note : For complex animation which are difficult to express in terms of code use lottie to generate a json format and use it in mobile.
+Note : For complex animation which are difficult to express in terms of code use lottie or jitter.video to generate a json format and use it in mobile.
+
+
+### Using custom theme : 
+* 
+
+
+
 
