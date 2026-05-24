@@ -161,3 +161,62 @@ Note : For complex animation which are difficult to express in terms of code use
 
 
 
+### Layout : 
+
+* Wrapper layout :
+```dart
+  row(
+    children:[
+      item1, item2, item3,
+    ]
+    mainAxisAlignment : MainAxisAlignment.Center
+    crossAxisAlighment : CrossAxisAlignment.end 
+  )
+
+  column(
+    children:[
+      item1,
+      item2,
+      item3,
+    ]
+    mainAxisAlighment : MainAxisAlighment.Center
+    crossAxisAlignment : CrossAxisAlighment.end
+  )
+
+GridView()
+
+ListView()
+
+Stack()
+
+```
+
+* Design Layout :
+  
+```dart
+
+  container(
+  decoration: BoxDecoration(
+    gradient : LinearGradient(
+      colors:[Colors.red, Colors.green, Colors.blue]
+      begin : Alighment.TopLeft,
+      end : Alighnment.BottomRight,
+      )
+    )
+  )
+
+  Text(
+    "HEy"
+    style : TextStyle()
+  )
+
+  TextField(
+    decoration : InputFieldDecoration()
+  )
+
+  
+
+```
+Note : In flex in web devleopment justify content is in main axis if row then mainAxis is horizontal, if column mainAxis is vertical.
+
+
