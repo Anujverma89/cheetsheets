@@ -237,11 +237,22 @@ Note : In flex in web devleopment justify content is in main axis if row then ma
       )
   )
 
+ExcludeSemantics()
+
 // merge Semantics will read both of them as one
 ```
 
 ### Widgets : 
-* 
+
+``` dart
+  ConstrainedBox(
+    child : Text("This is constrained box"),
+    maxWidth : 100,
+    minHeight : 40,
+  )
+  // this can also be achieved using sizedbox.expan()
+
+```
 
 
 
