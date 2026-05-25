@@ -278,8 +278,10 @@ ExcludeSemantics()
 OverflowBox(
   child: Image.asset("path_to_image")
 )
-  
+ 
 ```
+
+
 #### Flow : 
 * Flow is used when we want a custom animation and we want a full control on different aspets of flow.
 * Main Purpose of Flow
@@ -297,7 +299,6 @@ Example:
     delegate : CustomFlowDelegate()
     child:[]
   )
-
 ```
 
 ### Delegates : 
@@ -308,11 +309,22 @@ Example:
 
 
 ### Silvers : 
+* Silver are small independent scrollable areas inside a large scrolable areas which are used to avoid nested scrolls.
+```
+CustomScrollView(
+  Silver: <Widget>(
+    SilverList(
+
+    ),
+    SilverGrid(),
+
+  )
+)
+
 ```
 
 
 
-```
 
 #### Layout Builder : 
 * Layout builder is used to define layout according to the screen size and adopt to the layout.
@@ -342,7 +354,14 @@ Example:
     Silvers:<widget>[
       SilverAppBar(),
       SilverList(),
-      SilverGrid(), 
+      SilverGrid(),
+      SilverFillRemaining(),
+      SilverPersistantHeader(),
+      SilverToBoxAdapter(),
+      SilverPadding(),
+      SilverFixedExtentList(),
+      SilverChildBuilderDelegate(),
+      SilverChildListDelegate()
     ]
   )
 
