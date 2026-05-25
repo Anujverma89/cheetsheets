@@ -224,9 +224,10 @@ Note : In flex in web devleopment justify content is in main axis if row then ma
 * Syntax : Grammatical rules for something.
 * Inorder to make flutter accessible to every one we can wrap a object inside a container called semantic
 ```dart
-  Semantic(
+  Semantics(
     child: Text("This is an accessibility system")
-    label : " Read out loud" 
+    label : " Read out loud"
+    enabled : true,
   )
 ```
 
