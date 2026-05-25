@@ -272,6 +272,15 @@ ExcludeSemantics()
 
 ```
 
+#### Overflow box :
+* this is used when we wnat child to take it's own space rather than the parents space.
+```
+OverflowBox(
+  child: Image.asset("path_to_image")
+)
+  
+```
+
 
 ### Delegates : 
 
