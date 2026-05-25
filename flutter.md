@@ -301,21 +301,64 @@ Example:
 ```
 
 ### Delegates : 
-
 ```
+
 ```
 
 
 
 ### Silvers : 
-
 ```
 
 
 
 ```
 
+#### Layout Builder : 
+* Layout builder is used to define layout according to the screen size and adopt to the layout.
+```
 
+
+```
+
+
+#### Custom Paint : 
+* Custom paint is used to gain access to low level paint api and do handful of manual art work and paints. 
+```dart
+```
+
+
+
+#### Scrolling : 
+* ListView :
+  
+* GridView :
+  
+* CarouselView :
+  
+* CustomScrollView : custom scroll view only works with silver.
+```dart
+  CustomScrollView(
+    Silvers:<widget>[
+      SilverAppBar(),
+      SilverList(),
+      SilverGrid(), 
+    ]
+  )
+
+```
+
+
+
+
+#### Styling : 
+* Theme
+* MediaQuery
+* Padding
+
+
+
+  
 
 
 
