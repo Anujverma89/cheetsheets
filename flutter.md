@@ -254,6 +254,42 @@ ExcludeSemantics()
 
 ```
 
+#### Grid View 
+* Gridview is used to align arrange the items in 2d layout in a view that is in form of rows and columns.
+* Gridview always scrolls vertically by default.
+* Main Axis is the axis of scroll direction.
+```dart
+
+  GridView.count(
+    scrollDirection : Axis.Vertical // by default can be omitted in code
+    crossAxisCount : 5; // here this will have five columns
+    mainAxisSpacing : 10
+    corssAxisSpacing : 10
+    children:[
+      
+    ]
+  )
+
+```
+
+
+### Delegates : 
+
+```
+```
+
+
+
+### Silvers : 
+
+```
+
+
+
+```
+
+
+
 
 
 
