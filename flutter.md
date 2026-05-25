@@ -6,6 +6,10 @@
 
 ## Flutter Navigation 
 ### Method 1 : 
+* Drawbacks :
+  * It doesnot preserves the state.
+  * Everytime you switch to new screen and switch back you will loose every setting.
+  * 
 ```dart
 int currentIndex = 0;
 List<Widget> pages =[Home(), Bookings()];
@@ -18,8 +22,15 @@ items : <BottomNavigationBarItem>[
 ],
 onTap : onTapped(int index){setState((){currentIndex = index})};
 )
-
 ```
+
+### Method 2 : PageView 
+
+
+### Method 3 : IndexedStack
+
+
+### StatefulShellRoute & Goroute for production grade apps
 
 
 
@@ -313,11 +324,8 @@ Example:
 ```
 CustomScrollView(
   Silver: <Widget>(
-    SilverList(
-
-    ),
+    SilverList(),
     SilverGrid(),
-
   )
 )
 
