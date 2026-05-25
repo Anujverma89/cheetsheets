@@ -280,7 +280,25 @@ OverflowBox(
 )
   
 ```
+#### Flow : 
+* Flow is used when we want a custom animation and we want a full control on different aspets of flow.
+* Main Purpose of Flow
+* Efficient Animated Positioning
+* Especially when many children move frequently.
 
+Example:
+* expanding menus
+* radial menus
+* particle effects
+* animated galleries
+* floating chip layouts
+```dart
+  Flow(
+    delegate : CustomFlowDelegate()
+    child:[]
+  )
+
+```
 
 ### Delegates : 
 
