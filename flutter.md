@@ -215,8 +215,24 @@ Stack()
   )
 
   
-
 ```
 Note : In flex in web devleopment justify content is in main axis if row then mainAxis is horizontal, if column mainAxis is vertical.
+
+
+### Accessibility : 
+* Semantics : Meaning of something
+* Syntax : Grammatical rules for something.
+* Inorder to make flutter accessible to every one we can wrap a object inside a container called semantic
+```dart
+  Semantic(
+    child: Text("This is an accessibility system")
+    label : " Read out loud" 
+  )
+```
+
+### Widgets : 
+* 
+
+
 
 
