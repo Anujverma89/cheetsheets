@@ -229,6 +229,15 @@ Note : In flex in web devleopment justify content is in main axis if row then ma
     label : " Read out loud"
     enabled : true,
   )
+
+  MergeSemantics(
+    child:Row(
+        Text("Text 1"),
+        Text("Text 2"),
+      )
+  )
+
+// merge Semantics will read both of them as one
 ```
 
 ### Widgets : 
