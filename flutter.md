@@ -319,13 +319,13 @@ Example:
 
 
 
-### Silvers : 
-* Silver are small independent scrollable areas inside a large scrolable areas which are used to avoid nested scrolls.
+### s : 
+*  are small independent scrollable areas inside a large scrolable areas which are used to avoid nested scrolls.
 ```
 CustomScrollView(
-  Silver: <Widget>(
-    SilverList(),
-    SilverGrid(),
+  : <Widget>(
+    sliverList(),
+    slivGrid(),
   )
 )
 
@@ -356,20 +356,25 @@ CustomScrollView(
   
 * CarouselView :
   
-* CustomScrollView : custom scroll view only works with silver.
+* CustomScrollView : custom scroll view only works with sliver.
 ```dart
   CustomScrollView(
-    Silvers:<widget>[
-      SilverAppBar(),
-      SilverList(),
-      SilverGrid(),
-      SilverFillRemaining(),
-      SilverPersistantHeader(),
-      SilverToBoxAdapter(),
-      SilverPadding(),
-      SilverFixedExtentList(),
-      SilverChildBuilderDelegate(),
-      SilverChildListDelegate()
+    Slivers:<widget>[
+      sliverAppBar(),
+      sliverList(),
+      sliverGrid(),
+      sliverFillRemaining(),
+      sliverPersistantHeader(),
+      sliverToBoxAdapter(),
+      sliverPadding(),
+      sliverFixedExtentList(),
+      sliverChildBuilderDelegate(),
+      sliverChildListDelegate()
+      SliverToBoxAdapter(
+         child: Container(
+              color : Colors.red,
+           )
+      )
     ]
   )
 
