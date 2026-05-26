@@ -319,8 +319,8 @@ Example:
 
 
 
-### s : 
-*  are small independent scrollable areas inside a large scrolable areas which are used to avoid nested scrolls.
+### slivers : 
+* Slivers  are small independent scrollable areas inside a large scrolable areas which are used to avoid nested scrolls.
 ```
 CustomScrollView(
   : <Widget>(
@@ -409,3 +409,7 @@ body: Container(
 )
 
 ```
+* Note : Texts are not selectable by default and also they lack interaction.
+* You can wrap text into `SelectionArea()` for selection. `SlectionArea.Disabled()` to disable the selection.
+* You can wrap into `GestureDectector()` and apply `GestureDectector.onTap()` to apply certain events. You can also apply InkWell to add event to certain event.
+    
