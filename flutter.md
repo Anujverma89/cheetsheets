@@ -412,4 +412,11 @@ body: Container(
 * Note : Texts are not selectable by default and also they lack interaction.
 * You can wrap text into `SelectionArea()` for selection. `SlectionArea.Disabled()` to disable the selection.
 * You can wrap into `GestureDectector()` and apply `GestureDectector.onTap()` to apply certain events. You can also apply InkWell to add event to certain event.
+
+
+
+# Custom launcher : done 
+# Custom Icons : Done 
+# Page Navigation : Done 
+# Custom Theme : Waiting
     
