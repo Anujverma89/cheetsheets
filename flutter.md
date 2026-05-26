@@ -393,5 +393,19 @@ CustomScrollView(
   
 
 
+# RichText : 
+* Regular Text() is used when we want to display a string with same style but for string with different styles we have take a RichText()
+```dart
 
+body: Container(
+ text:RichText(
+  text: " This is a bold text"
+  textStyle : TextStyle(fontWeight : FontWeight.bold, fontSize: 24);
+ )
+ children: <TextSpan>[
+   TextSpan(),
+   TextSpan(),
+ ]
+)
 
+```
