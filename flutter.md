@@ -459,7 +459,7 @@ cons.adaptive.arrow_back
   }
 ```
 
-* Native alert
+* Native popup and Dialogs 
 ```dart
  void showNativeAlert(BuildContext context) {
    showAdaptiveDialog(
