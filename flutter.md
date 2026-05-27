@@ -419,4 +419,68 @@ body: Container(
 # Custom Icons : Done 
 # Page Navigation : Done 
 # Custom Theme : Waiting
+
+
+
+# Ways to design OS adaptive application : 
+* Use adaptive where ever possible.
+```dart
+ Icons.adaptive.share
+ switch.adaptive()
+ Slider.adaptive()
+CircularProgressIndicator.adaptive()
+Checkbox.adaptive()
+cons.adaptive.arrow_back
+```
+
+* Manual check while scaffolding :
+```dart
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final platform = Theme.of(context).platform;
+
+    if (platform == TargetPlatform.iOS) {
+      return const CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          middle: Text('Dashboard'), // Centers automatically on iOS
+        ),
+        child: SafeArea(child: HomeBody()),
+      );
+    }
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Dashboard'), // Left-aligns automatically on Android
+      ),
+      body: const HomeBody(),
+    );
+  }
+```
+
+* Native alert
+```dart
+ void showNativeAlert(BuildContext context) {
+   showAdaptiveDialog(
+     context: context,
+     builder: (context) {
+       return AlertDialog.adaptive(
+         title: const Text('System Alert'),
+         content: const Text('Do you want to save these changes?'),
+         actions: [
+           TextButton(
+             onPressed: () => Navigator.pop(context),
+             child: const Text('Cancel'),
+           ),
+           TextButton(
+             onPressed: () => Navigator.pop(context),
+             child: const Text('Save'),
+           ),
+         ],
+       );
+     },
+   );
+ }
+```
     
