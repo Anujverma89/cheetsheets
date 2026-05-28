@@ -483,4 +483,11 @@ cons.adaptive.arrow_back
    );
  }
 ```
+
+
+# Storage system in mobile : 
+* Backend API
+* File based Database (Sqlite)
+* Secure storage ( for auth related data ) 
+* Shared preference  
     
