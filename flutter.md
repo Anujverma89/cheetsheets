@@ -485,6 +485,27 @@ cons.adaptive.arrow_back
 ```
 
 
+#### Adaptive Containers : 
+```dart
+ switch.adaptive()
+ slider.adaptive()
+ checklist.adaptive()
+ radio.adaptive()
+ switchListTile.adaptive()
+
+ circularProgressIndicator.adaptive()
+ refreshIndicator.adaptive()
+ showDialog.adaptive()
+
+ Icons.adaptive.share()
+ Icons.adaptive.arrow_back()
+ Icons.adaptive.arrow_forward()
+ Icons.adaptive.flip_camera()
+
+```
+
+
+
 # Storage system in mobile : 
 * Backend API
 * File based Database (Sqlite)
