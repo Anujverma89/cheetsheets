@@ -520,3 +520,25 @@ cons.adaptive.arrow_back
 * Check platform and provide the Native widgets if adaptive is not available.
 * Provide the cupertinoTheme setting in Theme.
 * Use the SafeArea while rendering the UI
+
+
+
+# Colors : 
+* In general design principle :
+  * Primary : Means most used color use for atleat of 60%. 
+  * Secondary : Less used for atleast 30%
+  * Tertiary : Color used for 10%
+* In Material design system :
+  * Primary : Brand color
+  * Secondary : action color
+  * tertiary color : action color
+  * Surface color : background
+  * On Surface container : 
+
+
+
+# use of colors: 
+* Primary : used for main action in the page
+* Secondary : Interactive but not the main action of the page
+* Tertiary : Used to contrast the Primary :
+  * When you have two actions to take but you want to influnece the user of what decision to take like ( primary for high priority , teritary for low priority) 
