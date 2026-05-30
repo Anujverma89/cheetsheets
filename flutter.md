@@ -490,4 +490,12 @@ cons.adaptive.arrow_back
 * File based Database (Sqlite)
 * Secure storage ( for auth related data ) 
 * Shared preference  
-    
+
+
+
+# Designing for both IOS and Android : 
+* Use MaterialApp() : Becuase it can render both CupertinoWidgets and Material Widgets
+* Use Adaptive containers whenever for widgets those have adaptive UI.
+* Check platform and provide the Native widgets if adaptive is not available.
+* Provide the cupertinoTheme setting in Theme.
+* Use the SafeArea while rendering the UI
