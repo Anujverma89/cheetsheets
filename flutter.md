@@ -385,12 +385,26 @@ CustomScrollView(
 
 #### Styling : 
 * Theme
+```dart
+ theme : ThemeData{
+ textTheme : TextTheme();
+ colorScheme : const ColorScheme.light()
+ }
+```
 * MediaQuery
 * Padding
 
 
 
-  
+# Sheets in flutter : 
+* Backdrop sheets
+* Side sheets ( Libraries : side_sheet, awesome_side_sheet ) 
+* Bottom sheets
+  * Modal sheets.
+  * Standard sheets or persitant sheets.
+  * Expanding bottom sheets.
+* Navigation drawer 
+
 
 
 # RichText : 
@@ -541,4 +555,6 @@ cons.adaptive.arrow_back
 * Primary : used for main action in the page
 * Secondary : Interactive but not the main action of the page
 * Tertiary : Used to contrast the Primary :
-  * When you have two actions to take but you want to influnece the user of what decision to take like ( primary for high priority , teritary for low priority) 
+  * When you have two actions to take but you want to influnece the user of what decision to take like ( primary for high priority , teritary for low priority)
+
+
