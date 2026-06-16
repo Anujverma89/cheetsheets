@@ -165,6 +165,14 @@ AnimatedOpacity(
    height : 40,
    width : 100,
  )
+AnimatedRotation(
+ turns : 0.5
+ child : Container (
+  child : Text("something") 
+ )
+// here turns is actually angle 1 means 360 degrees of rotation 
+)
+
 )
 
 ```
