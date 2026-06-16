@@ -159,7 +159,13 @@ Hero(
   tag:"name"
   child: Image.asset("path_to_image")
 )
-AnimatedOpacity()
+AnimatedOpacity(
+ opacity : isAnimated ? 1 : 0,
+ child : Container(
+   height : 40,
+   width : 100,
+ )
+)
 
 ```
 
