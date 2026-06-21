@@ -30,6 +30,16 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 * Render tree
 
 
+## Cleanup : Flutter cleanup is needed in dispose : 
+* Controller
+* Animation controller 
+* stream subscription
+* timers
+* Focus nodes
+
+* Dart objects are automatically managed by garbage collector. 
+
+
 ## Flutter widget lifecycle : 
 ```dart
   * Widget
