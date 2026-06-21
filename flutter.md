@@ -24,6 +24,11 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 )
 ```
 
+# Trees : 
+* Widget tree
+* Element tree
+* Render tree
+
 
 ## Flutter widget lifecycle : 
 ```dart
