@@ -24,6 +24,18 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 )
 ```
 
+
+## Flutter widget lifecycle : 
+```dart
+  * Widget
+  * void initState(){super.initState()}
+  * build(){widget building}
+  * void dispose(){super.dispose()}
+
+  * Build happens for multiple times,
+  * each time we run setState() wiget rebuild's itself. 
+```
+
 ### Method 2 : PageView 
 
 
