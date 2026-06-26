@@ -661,13 +661,17 @@ ExpansionPanelList
 ExpansionPanelList.radio
 ```
 # Menus & Dropdowns
+```
 DropdownMenu
 DropdownButton
 PopupMenuButton
 MenuAnchor
 MenuBar
 SubmenuButton
+```
+
 # Navigation
+```
 BottomNavigationBar
 NavigationBar
 NavigationRail
@@ -679,7 +683,9 @@ BottomSheet
 showModalBottomSheet()
 showDialog()
 showMenu()
+```
 # Cards & Surfaces
+```
 Card
 ListTile
 Divider
@@ -688,16 +694,22 @@ Material
 Ink
 InkWell
 InkResponse
+```
 # Images
+```
 Image
 FadeInImage
 CircleAvatar
 Icon
+```
 # Progress Indicators
+```
 CircularProgressIndicator
 LinearProgressIndicator
 RefreshProgressIndicator
+```
 # Feedback Widgets
+```
 SnackBar
 Banner
 MaterialBanner
@@ -705,12 +717,16 @@ Tooltip
 AlertDialog
 SimpleDialog
 AboutDialog
+```
 # Date & Time Pickers
+```
 showDatePicker()
 showDateRangePicker()
 showTimePicker()
 CalendarDatePicker
+```
 # Animation Widgets
+```
 AnimatedContainer
 AnimatedOpacity
 AnimatedAlign
@@ -721,7 +737,9 @@ AnimatedCrossFade
 Hero
 TweenAnimationBuilder
 AnimatedBuilder
+```
 # Gesture Widgets
+```
 GestureDetector
 InkWell
 InkResponse
@@ -729,7 +747,9 @@ Dismissible
 Draggable
 DragTarget
 InteractiveViewer
+```
 # Lists
+```
 ListTile
 ReorderableListView
 Dismissible
@@ -737,8 +757,9 @@ ExpansionTile
 CheckboxListTile
 RadioListTile
 SwitchListTile
+```
 # Adaptive (iOS)
-
+```
 Flutter also provides Cupertino widgets:
 
 CupertinoButton
@@ -748,7 +769,9 @@ CupertinoNavigationBar
 CupertinoTabScaffold
 CupertinoPicker
 CupertinoDatePicker
+```
 # Useful Material Components
+```
 AppBar
 BottomAppBar
 NavigationBar
@@ -759,7 +782,9 @@ BottomSheet
 PersistentBottomSheet
 FloatingActionButton
 ScaffoldMessenger
+```
 # Common Dialogs
+```
 showDialog()
 
 showGeneralDialog()
@@ -769,7 +794,9 @@ showModalBottomSheet()
 showBottomSheet()
 
 showMenu()
+```
 # Miscellaneous Widgets
+```
 Hero
 FutureBuilder
 StreamBuilder
@@ -778,5 +805,6 @@ LayoutBuilder
 OrientationBuilder
 Visibility
 Offstage
+```
 Opacity
 Placeholder
