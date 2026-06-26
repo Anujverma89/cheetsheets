@@ -599,3 +599,184 @@ cons.adaptive.arrow_back
   * When you have two actions to take but you want to influnece the user of what decision to take like ( primary for high priority , teritary for low priority)
 
 
+
+# Comprehensive widget list 
+* Row
+* Column
+* Stack
+* Wrap
+* Flex
+* Expanded
+* Flexible
+* Spacer
+* Container
+* SizedBox
+* Padding
+* Align
+* Center
+* AspectRatio
+* ConstrainedBox
+* FractionallySizedBox
+* Positioned
+* SafeArea
+* Scaffold
+
+# Scrolling 
+```
+ListView
+GridView
+SingleChildScrollView
+CustomScrollView
+NestedScrollView
+PageView
+Scrollbar
+RefreshIndicator : used to show a refreshing indicator above while scrolling
+```
+
+# Text 
+```
+Text
+SelectableText
+RichText
+DefaultTextStyle
+EditableText
+```
+
+
+# Selection 
+```
+Chip
+ChoiceChip
+FilterChip
+ActionChip
+InputChip
+SegmentedButton
+ToggleButtons
+```
+# Expansion Widgets 
+```
+ExpansionTile
+ExpansionPanel
+ExpansionPanelList
+ExpansionPanelList.radio
+```
+# Menus & Dropdowns
+DropdownMenu
+DropdownButton
+PopupMenuButton
+MenuAnchor
+MenuBar
+SubmenuButton
+# Navigation
+BottomNavigationBar
+NavigationBar
+NavigationRail
+NavigationDrawer
+Drawer
+TabBar
+TabBarView
+BottomSheet
+showModalBottomSheet()
+showDialog()
+showMenu()
+# Cards & Surfaces
+Card
+ListTile
+Divider
+VerticalDivider
+Material
+Ink
+InkWell
+InkResponse
+# Images
+Image
+FadeInImage
+CircleAvatar
+Icon
+# Progress Indicators
+CircularProgressIndicator
+LinearProgressIndicator
+RefreshProgressIndicator
+# Feedback Widgets
+SnackBar
+Banner
+MaterialBanner
+Tooltip
+AlertDialog
+SimpleDialog
+AboutDialog
+# Date & Time Pickers
+showDatePicker()
+showDateRangePicker()
+showTimePicker()
+CalendarDatePicker
+# Animation Widgets
+AnimatedContainer
+AnimatedOpacity
+AnimatedAlign
+AnimatedPadding
+AnimatedPositioned
+AnimatedSwitcher
+AnimatedCrossFade
+Hero
+TweenAnimationBuilder
+AnimatedBuilder
+# Gesture Widgets
+GestureDetector
+InkWell
+InkResponse
+Dismissible
+Draggable
+DragTarget
+InteractiveViewer
+# Lists
+ListTile
+ReorderableListView
+Dismissible
+ExpansionTile
+CheckboxListTile
+RadioListTile
+SwitchListTile
+# Adaptive (iOS)
+
+Flutter also provides Cupertino widgets:
+
+CupertinoButton
+CupertinoSwitch
+CupertinoAlertDialog
+CupertinoNavigationBar
+CupertinoTabScaffold
+CupertinoPicker
+CupertinoDatePicker
+# Useful Material Components
+AppBar
+BottomAppBar
+NavigationBar
+NavigationRail
+NavigationDrawer
+Drawer
+BottomSheet
+PersistentBottomSheet
+FloatingActionButton
+ScaffoldMessenger
+# Common Dialogs
+showDialog()
+
+showGeneralDialog()
+
+showModalBottomSheet()
+
+showBottomSheet()
+
+showMenu()
+# Miscellaneous Widgets
+Hero
+FutureBuilder
+StreamBuilder
+Builder
+LayoutBuilder
+OrientationBuilder
+Visibility
+Offstage
+Opacity
+Placeholder
