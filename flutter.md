@@ -11,6 +11,7 @@
 * hidden : 
 
 * WidgetBindingObserver is used to observe the lifestyle of an app and take actions.
+  
 | Callback                           |  How Often Used  |
 | ---------------------------------- | :--------------: |
 | `didChangeAppLifecycleState()`     |       ⭐⭐⭐⭐⭐      |
