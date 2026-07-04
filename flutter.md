@@ -3,6 +3,13 @@
 ## Flutter execution 
 
 
+## Flutter lifecycle : 
+* resumed : when user opens the app
+* paused : when app goes in background but still in memory. (remember memory may be cleaned for new app to come) 
+* inactive : sudden pause or overlay over screen
+* detached :
+* hidden : 
+
 
 ## Flutter Navigation 
 ### Method 1 : 
