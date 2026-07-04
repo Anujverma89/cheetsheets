@@ -6,9 +6,23 @@
 ## Flutter lifecycle : 
 * resumed : when user opens the app
 * paused : when app goes in background but still in memory. (remember memory may be cleaned for new app to come) 
-* inactive : sudden pause or overlay over screen
+* inactive : App is still in forground but is interrupted by certain activities like notification , phonecall etc 
 * detached :
 * hidden : 
+
+* WidgetBindingObserver is used to observe the lifestyle of an app and take actions.
+| Callback                           |  How Often Used  |
+| ---------------------------------- | :--------------: |
+| `didChangeAppLifecycleState()`     |       ⭐⭐⭐⭐⭐      |
+| `didChangeMetrics()`               |        ⭐⭐⭐       |
+| `didChangePlatformBrightness()`    |        ⭐⭐        |
+| `didChangeLocales()`               |        ⭐⭐        |
+| `didHaveMemoryPressure()`          |         ⭐        |
+| `didChangeAccessibilityFeatures()` |         ⭐        |
+| `didChangeViewFocus()`             |       Rare       |
+| `didRequestAppExit()`              |  Mostly desktop  |
+| Predictive Back callbacks          | Advanced Android |
+
 
 
 ## Flutter Navigation 
