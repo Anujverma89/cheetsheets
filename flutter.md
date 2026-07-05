@@ -10,20 +10,30 @@
 * detached :
 * hidden : 
 
+* Widgetbdining is a bride which helps flutter to talk with OS. It is used for channel commnnication, hardware gesture, manage frames etc
 * WidgetBindingObserver is used to observe the lifestyle of an app and take actions.
-  
 | Callback                           |  How Often Used  |
 | ---------------------------------- | :--------------: |
-| `didChangeAppLifecycleState()`     |       ⭐⭐⭐⭐⭐      |
-| `didChangeMetrics()`               |        ⭐⭐⭐       |
-| `didChangePlatformBrightness()`    |        ⭐⭐        |
-| `didChangeLocales()`               |        ⭐⭐        |
-| `didHaveMemoryPressure()`          |         ⭐        |
-| `didChangeAccessibilityFeatures()` |         ⭐        |
+| `didChangeAppLifecycleState()`     |       ⭐⭐⭐⭐⭐ |
+| `didChangeMetrics()`               |        ⭐⭐⭐    |
+| `didChangePlatformBrightness()`    |        ⭐⭐      |
+| `didChangeLocales()`               |        ⭐⭐      |
+| `didHaveMemoryPressure()`          |         ⭐       |
+| `didChangeAccessibilityFeatures()` |         ⭐       |
 | `didChangeViewFocus()`             |       Rare       |
 | `didRequestAppExit()`              |  Mostly desktop  |
 | Predictive Back callbacks          | Advanced Android |
 
+
+
+## Progress Indicators : 
+* refreshIndicator : Used with scrollables like listview, future builder, stream builder it also has inbuilt gesture detector.
+* refreshProgressIndicator : just a ciruclar widget with circular progress and a background used for refresh
+* Circular Progress Indicator : Used for page load and other
+* Linear Progress Indicator : Used to show linear progress
+
+
+## 
 
 
 ## Flutter Navigation 
