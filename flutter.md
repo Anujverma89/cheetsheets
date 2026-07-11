@@ -33,12 +33,17 @@
 * Linear Progress Indicator : Used to show linear progress
 
 
-## dart:convert ( json and serialization ) 
+### dart:convert ( json and serialization ) 
 * jsonDecode() // decode json string into json object
 * jsonEncode() // encode object into json string '{"id":12, "name":"anuj"}'
 
 
-## Flutter Navigation 
+### Json : 
+* Json is a standard used to send data over internet.
+* JsonString is a instance of json which we generally use in daily life. 
+
+
+### Flutter Navigation 
 ### Method 1 : 
 * Drawbacks :
   * It doesnot preserves the state.
