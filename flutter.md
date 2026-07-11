@@ -33,7 +33,9 @@
 * Linear Progress Indicator : Used to show linear progress
 
 
-## 
+## dart:convert ( json and serialization ) 
+* jsonDecode() // decode json string into json object
+* jsonEncode() // encode object into json string '{"id":12, "name":"anuj"}'
 
 
 ## Flutter Navigation 
