@@ -100,6 +100,15 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 ```
 
 
+### Services : 
+* services in flutter talks to end points, like server apis, channels.
+
+### Repositories : 
+* repositories in flutter are central place for data and single source of truth.
+
+
+
+
 ### Method 3 : IndexedStack
 
 
