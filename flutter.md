@@ -122,6 +122,39 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 ```
 ```
 
+### Query and path 
+```dart
+  query : https://jivem.in/products?id=123&color=red
+  color = req.query.color
+  id = req.query.id
+
+
+  path : https://jivem.in/user/:userid
+  user = req.params.userid "this helps to find out the userid"
+
+// both of them can be used together
+// they are standards not a framework specifc 
+
+
+```
+
+
+### Go router : 
+* A centralized routing mechanism introduced in flutter.
+```dart
+   GoRoute(
+     path : "somepath",
+     builder: (builder, state){
+      // state values :
+        final data = state.extra as Something; // data that previous screen has sent
+        final pathParam = state.queryParameters["path"]; // to get path parameter
+        final queryParam = state.queryParameters["query"]; // get all the query parameters
+        final pathParamAll = state.queryParameters["tag"]; // geta all the path parameters 
+      return SomeScreen();
+     }
+   )
+```
+
 
 
 ## Adding launcher icons : Launcher icon is used to show the mobile app logo in mobile phones. 
