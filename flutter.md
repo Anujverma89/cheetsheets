@@ -84,6 +84,20 @@ onTap : onTapped(int index){setState((){currentIndex = index})};
 ```
 
 ### Method 2 : PageView 
+* pageview contains multiple pages like we see in instagram reels.
+* we have a controller in page view.
+```dart
+   PageView(
+    controller : _pageController,
+    physics : NeverScrollPhysics,
+    children:[
+          Container(
+             child : Text("page 1),
+          ),
+          Container( child : Text("page 2"))
+     ]
+   )
+```
 
 
 ### Method 3 : IndexedStack
