@@ -69,9 +69,9 @@ int main(){
 ```cc
     // preprocessor directive names : #include, #define,
     // #header guard
-        #indef 
-        #def
-        #ifdef
+        //#indef 
+        //#define name "ANuj"
+        //#ifdef
 
     //file::player.h
     #ifndef
