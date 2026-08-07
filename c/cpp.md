@@ -60,6 +60,48 @@ int main(){
 
 ```
 
+## Preprocessor directives : 
+* Preprocessor directives tell the compiler to include all the files and replace all the defined names first before proceeding to compile.
+* It is the first step in compilation.
+* All the included files are processed and added in a intermediate file called main.i
+* which is further processed.
+  
+```cc
+    // preprocessor directive names : #include, #define,
+    #header guard
+        #indef 
+        #def
+        #ifdef
+
+    //file::player.h
+    #ifndef
+        struct member{
+            name
+            age
+            membership 
+        }
+    #endif
+
+    //file::memberhship.cpp
+    #include <player.h>
+
+    void membership(){
+        return membership;
+    }
+
+
+    //file::main.cpp
+    #include<player.h>
+    #include<membership.h>
+
+    void main(){
+        return 0;
+    }
+
+    // here in main.cpp player.h will not be included twice
+```
+
+
 ## Start
 ```cpp
     #include <iostream>
