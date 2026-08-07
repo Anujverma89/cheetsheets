@@ -68,7 +68,7 @@ int main(){
   
 ```cc
     // preprocessor directive names : #include, #define,
-    #header guard
+    // #header guard
         #indef 
         #def
         #ifdef
