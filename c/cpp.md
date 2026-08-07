@@ -60,6 +60,15 @@ int main(){
 
 ```
 
+
+## difference between define and const 
+```cpp
+    /*
+    * # define has no memory address , const has a memory address
+    * # the actual name defined by define is replaced in pre processing stage and const can be accessed in while in execution. 
+    */
+```
+
 ## Preprocessor directives : 
 * Preprocessor directives tell the compiler to include all the files and replace all the defined names first before proceeding to compile.
 * It is the first step in compilation.
