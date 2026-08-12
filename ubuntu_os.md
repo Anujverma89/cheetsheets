@@ -9,7 +9,6 @@
   * GUI shells : like windows explorer, GNOME.
   * CLI shells : like bash, zsh etc
  
-
 # Ownership : 
 * root : owns everything in a system.
 * specific user : like desktop users.
@@ -23,5 +22,10 @@
 
 # files : 
 * /file
+
+# Note : 
+* In unix based system when you run a program or executable as some user that executable has accesses to all the resources that are owned by user and has permission to access. So it is recommended to run a programe or any executable with specific user permission. 
+
+
 
 
