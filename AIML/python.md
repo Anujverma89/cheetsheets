@@ -272,6 +272,25 @@ with autocontext() as acon:
 
 ```
 
+
+
+### asyncio 
+
+
+### multi threading & multi processing 
+
+### decorators 
+
+### metaclasses 
+
+
+### Descriptors 
+
+
+### Global interpreter lock
+
+
+
 ### Data types 
 ```py
 import sys
