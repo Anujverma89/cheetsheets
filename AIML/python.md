@@ -244,6 +244,33 @@ print(x)
 #this is taken from c itself. C also has this inbuilt feature.
 ```
 
+### context managers : 
+* Context is an environment or a circumstance that gives meaning to something.
+* In order to provide context we use with in python `with somecontext as context:`
+```py
+def manual_context():
+    def __start__():
+        print("started env")
+
+    def __end__():
+        print("ended env")
+
+with manual_context() as cont:
+    print("this is manual context")
+
+
+@contextmanager
+def autocontext()
+    print("auto context")
+
+    yield
+
+    print("this is end context")
+
+with autocontext() as acon:
+    print(acon) 
+
+```
 
 ### Data types 
 ```py
