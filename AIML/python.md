@@ -279,16 +279,87 @@ with autocontext() as acon:
 
 ### multi threading & multi processing 
 
+
+
 ### decorators 
+* decorators are the functions which takes other function as a parameter and extends its functionality.
+* starts and ends with wrapper function
+```py
+
+def check_auth(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        request = args.request;
+        if !request.access_token.is_valid():
+            return false
+        else func()
+    return true
+
+@check_auth
+def get_data():
+    return data
+
+@property
+def user():
+
+@user.setter
+def set_user():
+
+@classmethod
+
+@staticmethod
+
+#by default every function is a instance level.
+
+```
+
+
 
 ### metaclasses 
+* metaclasses are classes which define the structure of another class.
+* abstract class defines the behaviour of a classes. 
+* classes have :
+    * Methods (behaviours ) `instance method, class method , static method`
+    * Attributes ( properties ) `instance attributes, class, static`
+    * magic method
+    * metadata
+    * nested classes
 
 
 ### Descriptors 
+* Descriptors are used to define getters and setters for a field.
+* Every field that you want to define getters and setters should have a descriptors class.
+* that descriptor class are defined to alter the behaviour of how attribute is accessed, assigned and deleted.
+* examples :
+```
+    * validation before assignment
+    * lazy loading while fetching data
+    * caching data after loading.
+
+    __set__(self, instance, value)
+    __get__(self, instance, owner)
+```
+
 
 
 ### Global interpreter lock
+* Program executes on CPU, CPU scheduling is done by OS.
+* When thread is running python interpreter doesn't allows other other threads to run because it may corrupt data.
+* To get parallel execution we need a GIL- free python interpreter. 
 
+
+### Program execution and threading : 
+* Program -> Process -> Main thread.
+* Program loads in memory.
+* Now that program when loaded becomes memory with its own heap, stack, memory etc.
+* Now each process will have a main thread and note that `thread runs on cpu` not process.
+* Main thread can spawn multiple threads and they can run on any core of CPU.
+* Mostly if 4 cpu core and 4 processes it's mostly likely that each process will take one core.
+* Each core has `cache l1, l2` and holds data for current thread being executed.
+* If some other thread comes in a core cpu will have to fetch data from ram which makes it slow.*
+* `CPU affinity` when one thread(process) runs on same core and not on any other it is CPU affinity. 
+* CPU allocation, thread scheduling etc is done by OS on request of Programe.
+* To avoid data corruption between threads programe use mutex ( mutual locking ) .
 
 
 ### Data types 
