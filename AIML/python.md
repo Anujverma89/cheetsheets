@@ -275,6 +275,30 @@ with autocontext() as acon:
 
 
 ### asyncio 
+* async programming helps to execute other parts of program while one part is waiting for something.
+* Async in python is different than js.
+* Js is by default async and uses `engine + event loop` while executing the code.
+* In python we have to enable the event loop by `asyncio.run(func)`
+* here asyncio runs on a single thread and initializes the event loop.
+* asyncio is not beneficial when a task needs heavy cpu uses like complex processing of images and maths calculation because it automatically increases the time CPU uses. 
+* NOTE : Js engine is responsible to execute the code line by line and event loop get helps in execution of async code.
+    * They come together when you run js code inside run time env like browser or node.
+    * Runtime like js and browser has many threads for io, network but engine runs only on main and cannot spawn new thread.
+* FASTAPI : behind the scenes handle the tasks to initialize and run the async code with the help of UVICORN `asynchronous server gateway interface`
+* The reason CPU becomes free when something like I/O bound or network bound operations comes because hardware like SSD and Network adaptors comes with built in microprocessors.
+```
+import async
+
+async def fetch_data():
+    async.sleep(20)
+    return {"name":"Anuj")
+
+def main():
+    await fetch_data()
+
+asyncio.run(main())
+
+```
 
 
 ### multi threading & multi processing 
