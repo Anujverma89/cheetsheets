@@ -1,0 +1,35 @@
+DEBUG:parent:this is debug one
+Stack (most recent call last):
+  File "/home/anuj/Desktop/work_space/jivem/tech/backend/sqlal/py/multilog.py", line 17, in <module>
+    parentLog.debug("this is debug one",  stack_info= True)
+DEBUG:parent.child.child: this is child2 debug
+DEBUG:parent:this is debug one
+NoneType: None
+Stack (most recent call last):
+  File "/home/anuj/Desktop/work_space/jivem/tech/backend/sqlal/py/multilog.py", line 17, in <module>
+    parentLog.debug("this is debug one", exc_info= True, stack_info= True)
+DEBUG:parent.child.child: this is child2 debug
+DEBUG:parent:this is debug one
+NoneType: None
+Stack (most recent call last):
+  File "/home/anuj/Desktop/work_space/jivem/tech/backend/sqlal/py/multilog.py", line 18, in <module>
+    parentLog.debug("this is debug one", exc_info= True, stack_info= True)
+DEBUG:parent.child.child: this is child2 debug
+DEBUG:parent:this is debug one
+NoneType: None
+Stack (most recent call last):
+  File "/home/anuj/Desktop/work_space/jivem/tech/backend/sqlal/py/multilog.py", line 25, in <module>
+    parentLog.debug("this is debug one", exc_info= True, stack_info= True)
+DEBUG:parent.child.child: this is child2 debug
+2026-08-13 21:59:31,744 | 126111656089088 this is debug one
+NoneType: None
+Stack (most recent call last):
+  File "/home/anuj/Desktop/work_space/jivem/tech/backend/sqlal/py/multilog.py", line 25, in <module>
+    parentLog.debug("this is debug one", exc_info= True, stack_info= True)
+DEBUG:parent:this is debug one
+NoneType: None
+Stack (most recent call last):
+  File "/home/anuj/Desktop/work_space/jivem/tech/backend/sqlal/py/multilog.py", line 25, in <module>
+    parentLog.debug("this is debug one", exc_info= True, stack_info= True)
+2026-08-13 21:59:31,744 | 126111656089088  this is child2 debug
+DEBUG:parent.child.child: this is child2 debug

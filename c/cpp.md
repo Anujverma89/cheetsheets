@@ -3,7 +3,7 @@
 ## Basics
 ```cpp
     /**
- * There are different ways of writing the programe and everyone's algorithm is different and unique but we select the unique one.
+ * There are different ways of writing the programe and everyone's algorithm is different and unique but we select the optimum one.
  * 
  * 
  */
@@ -59,6 +59,57 @@ int main(){
  */
 
 ```
+
+
+## difference between define and const 
+```cpp
+    /*
+    * # define has no memory address , const has a memory address
+    * # the actual name defined by define is replaced in pre processing stage and const can be accessed in while in execution. 
+    */
+```
+
+## Preprocessor directives : 
+* Preprocessor directives tell the compiler to include all the files and replace all the defined names first before proceeding to compile.
+* It is the first step in compilation.
+* All the included files are processed and added in a intermediate file called main.i
+* which is further processed.
+  
+```cc
+    // preprocessor directive names : #include, #define,
+    // #header guard
+        //#indef 
+        //#define name "ANuj"
+        //#ifdef
+
+    //file::player.h
+    #ifndef
+        struct member{
+            name
+            age
+            membership 
+        }
+    #endif
+
+    //file::memberhship.cpp
+    #include <player.h>
+
+    void membership(){
+        return membership;
+    }
+
+
+    //file::main.cpp
+    #include<player.h>
+    #include<membership.h>
+
+    void main(){
+        return 0;
+    }
+
+    // here in main.cpp player.h will not be included twice
+```
+
 
 ## Start
 ```cpp
@@ -128,7 +179,7 @@ int main(){
  * We ofetn use namespace with scope resolution operator :: 
  * Namespace is a declerative part that helps to define the scope of varibles and functions collectively calling identifiers
  * They can only be defined globally.
- * If the identifers  doesn't have any identifier than it has by default global namespace.
+ * If the identifers  doesn't have any namespace than it has by default global namespace.
  * Using is a derecitve that elemintes specifying the scope of the identifer.
  * Namespaces can be nested into another namespace.
  * Namespace provides context to the identifier whereas the scope provides visibility to the identifer 
@@ -151,7 +202,7 @@ int main(){
  * 
  * 
  * Abstraction
- *  -> Hiding the implementation detail i.e. how but what is done is always known.
+ *  -> Hiding the implementation detail i.e. how, but what is done is always known.
  * 
  * 
  * Encapsulation
@@ -1465,6 +1516,9 @@ int main(){
         char gender[10];
 
         public:
+        //the below syntax :age(age) is a initializer list which initializes the members without the body where member acts as a function
+        // this is mostly used to initialize the const member eg const in age (:age(age))
+
         Human(int age, const char *name):age(age){
             this->age = age;
             strcpy(this->gender,name);
@@ -1523,7 +1577,7 @@ int main(){
     // construcutor is a method of class with the same name of a class 
     // types of constructors : 
         // 1) default constructor : When no constructor is created in a classes. it is implictly created by compiler 
-        // NO argument constructor created by user itself 
+           // NO argument constructor created by user itself 
         // 2) parametrized constructor : with arguments 
         // 3) copy constructor : takes the argument of the same type and creates and object out of it.
             // In copy constructor the arguement shoudn't be call by value
@@ -1533,7 +1587,9 @@ int main(){
         // 6) Construcutors have no return type becuase of following reason : 
                 // 1) implicit return : they implictly return the object instance
                 // 2) initialization : Constructors are used to instantiate and initialize 
-                // 3) To make compiler differentiate between the method and the construtor 
+                // 3) To make compiler differentiate between the method and the construtor
+        // 7) when the permaterized construcutor is crated the default one doesn't runs at any cost.
+        // 8) When we have peramaterized constructor we also have to give the default one ourslef 
     /*
 
     NOTE : 

@@ -1,0 +1,9 @@
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  running file
+NoneType: None
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  THis is child debug
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  this is info log
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  THis is debug log
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  Adding warning log
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  THis is error log
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  THis is critical
+2026-08-13 19:16:53,044 192.168.0.1     fbloggs  completed

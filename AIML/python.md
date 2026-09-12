@@ -231,6 +231,13 @@ eval() function exuectes the expression in python
 """
 ```
 
+### String interning 
+* String interning in python is same as creating a common string pool for optimization.
+* It is a dictionary of a unique strings that are created at run-time.
+* Every system or program level string that contains only alpha numeric characters and underscores without space are stored in string pool.
+* if two variables have same literal with above criteria they point to the same string object.
+* Those string who have space in between are stored in heap storage.
+
 
 ### Input and output Redirection 
 ```py
@@ -243,6 +250,147 @@ print(x)
 #input python filename.py < inputfile
 #this is taken from c itself. C also has this inbuilt feature.
 ```
+
+### context managers : 
+* Context is an environment or a circumstance that gives meaning to something.
+* In order to provide context we use with in python `with somecontext as context:`
+```py
+def manual_context():
+    def __start__():
+        print("started env")
+
+    def __end__():
+        print("ended env")
+
+with manual_context() as cont:
+    print("this is manual context")
+
+
+@contextmanager
+def autocontext()
+    print("auto context")
+
+    yield
+
+    print("this is end context")
+
+with autocontext() as acon:
+    print(acon) 
+
+```
+
+
+
+### asyncio 
+* async programming helps to execute other parts of program while one part is waiting for something.
+* Async in python is different than js.
+* Js is by default async and uses `engine + event loop` while executing the code.
+* In python we have to enable the event loop by `asyncio.run(func)`
+* here asyncio runs on a single thread and initializes the event loop.
+* asyncio is not beneficial when a task needs heavy cpu uses like complex processing of images and maths calculation because it automatically increases the time CPU uses. 
+* NOTE : Js engine is responsible to execute the code line by line and event loop get helps in execution of async code.
+    * They come together when you run js code inside run time env like browser or node.
+    * Runtime like js and browser has many threads for io, network but engine runs only on main and cannot spawn new thread.
+* FASTAPI : behind the scenes handle the tasks to initialize and run the async code with the help of UVICORN `asynchronous server gateway interface`
+* The reason CPU becomes free when something like I/O bound or network bound operations comes because hardware like SSD and Network adaptors comes with built in microprocessors.
+```
+import async
+
+async def fetch_data():
+    async.sleep(20)
+    return {"name":"Anuj")
+
+def main():
+    await fetch_data()
+
+asyncio.run(main())
+
+```
+
+
+### multi threading & multi processing 
+
+
+
+### decorators 
+* decorators are the functions which takes other function as a parameter and extends its functionality.
+* starts and ends with wrapper function
+```py
+
+def check_auth(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        request = args.request;
+        if !request.access_token.is_valid():
+            return false
+        else func()
+    return true
+
+@check_auth
+def get_data():
+    return data
+
+@property
+def user():
+
+@user.setter
+def set_user():
+
+@classmethod
+
+@staticmethod
+
+#by default every function is a instance level.
+
+```
+
+
+
+### metaclasses 
+* metaclasses are classes which define the structure of another class.
+* abstract class defines the behaviour of a classes. 
+* classes have :
+    * Methods (behaviours ) `instance method, class method , static method`
+    * Attributes ( properties ) `instance attributes, class, static`
+    * magic method
+    * metadata
+    * nested classes
+
+
+### Descriptors 
+* Descriptors are used to define getters and setters for a field.
+* Every field that you want to define getters and setters should have a descriptors class.
+* that descriptor class are defined to alter the behaviour of how attribute is accessed, assigned and deleted.
+* examples :
+```
+    * validation before assignment
+    * lazy loading while fetching data
+    * caching data after loading.
+
+    __set__(self, instance, value)
+    __get__(self, instance, owner)
+```
+
+
+
+### Global interpreter lock
+* Program executes on CPU, CPU scheduling is done by OS.
+* When thread is running python interpreter doesn't allows other other threads to run because it may corrupt data.
+* To get parallel execution we need a GIL- free python interpreter. 
+
+
+### Program execution and threading : 
+* Program -> Process -> Main thread.
+* Program loads in memory.
+* Now that program when loaded becomes memory with its own heap, stack, memory etc.
+* Now each process will have a main thread and note that `thread runs on cpu` not process.
+* Main thread can spawn multiple threads and they can run on any core of CPU.
+* Mostly if 4 cpu core and 4 processes it's mostly likely that each process will take one core.
+* Each core has `cache l1, l2` and holds data for current thread being executed.
+* If some other thread comes in a core cpu will have to fetch data from ram which makes it slow.*
+* `CPU affinity` when one thread(process) runs on same core and not on any other it is CPU affinity. 
+* CPU allocation, thread scheduling etc is done by OS on request of Programe.
+* To avoid data corruption between threads programe use mutex ( mutual locking ) .
 
 
 ### Data types 
