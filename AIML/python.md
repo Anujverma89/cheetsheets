@@ -231,6 +231,13 @@ eval() function exuectes the expression in python
 """
 ```
 
+### String interning 
+* String interning in python is same as creating a common string pool for optimization.
+* It is a dictionary of a unique strings that are created at run-time.
+* Every system or program level string that contains only alpha numeric characters and underscores without space are stored in string pool.
+* if two variables have same literal with above criteria they point to the same string object.
+* Those string who have space in between are stored in heap storage.
+
 
 ### Input and output Redirection 
 ```py
